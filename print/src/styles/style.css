@@ -1,0 +1,328 @@
+/* ОБЩИЕ СТИЛИ */
+body {
+    background: #efefef;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+}
+
+a {
+    color: #f58220;
+    font-weight: 400;
+}
+
+span {
+    font-weight: 300;
+    color: #f58220;
+}
+
+.good {
+    color: #09bf1a;
+    font-weight: bolder;
+}
+
+.bad {
+    color: red;
+    font-weight: bolder;
+}
+
+.mlogin {
+    margin: 5% auto 0;
+}
+
+.mregister {
+    margin: 5% auto 0;
+}
+
+.error {
+    margin: 40px auto 0;
+    border: 1px solid #000000;
+    padding: 3px;
+    color: #fff;
+    text-align: center;
+    width: 650px;
+    background: #f58220;
+}
+
+.regtext {
+    font-size: 13px;
+    margin-top: 26px;
+    color: #000000;
+}
+
+
+/* КОНТЕЙНЕРЫ */
+
+.container {
+    padding: 25px 16px 25px 10px;
+    font-weight: 400;
+    overflow: hidden;
+    width: 350px;
+    height: auto;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.13);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.13);
+    box-shadow: 0 1px 3px rgba(0,0,0,.13);
+}
+
+.container_order_history {
+    padding: 25px 16px 25px 10px;
+    font-weight: 400;
+    overflow: scroll;
+    width: 97%;
+    height: auto;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.13);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.13);
+    box-shadow: 0 1px 3px rgba(0,0,0,.13);
+}
+
+.container_order_history h1 {
+    color: #000000;
+    text-align: center;
+    font-weight: 300;
+    border: 1px dashed #000000;
+    margin-top: 13px;
+}
+
+.container_order_history form .select {
+    background: #fbfbfb;
+    font-size: 18px;
+    line-height: 2;
+    width: 100%;
+    padding: 1px;
+    margin: 0 6px 5px 0;
+    outline: none;
+    border: 1px solid #000000;
+
+}
+
+#welcome {
+    width: 500px;
+    padding: 30px;
+    background: #fff;
+    margin: 160px auto 0;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.13);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.13);
+    box-shadow: 0 1px 3px rgba(0,0,0,.13);
+}
+
+.container h1 {
+    color: #000000;
+    text-align: center;
+    font-weight: 300;
+    border: 1px dashed #000000;
+    margin-top: 13px;
+}
+
+.container label {
+    color: #000000;
+    font-size: 14px;
+}
+
+#login {
+    width: 320px;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.container form .input,.container input[type=text],.container input[type=password],.container input[type=e] {
+    background: #fbfbfb;
+    font-size: 24px;
+    line-height: 1;
+    width: 100%;
+    padding: 0px;
+    margin: 0 6px 5px 0;
+    outline: none;
+    border: 1px solid #000000;
+}
+
+.container form .input:focus {
+    border: 1px solid #f58220;
+    -webkit-box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+    -moz-box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+    box-shadow: 0 0 3px 0 rgba(245,130,32,0.75);
+}
+
+.container form .select {
+    background: #fbfbfb;
+    font-size: 18px;
+    line-height: 1;
+    width: 100%;
+    padding: 3px;
+    margin: 0 6px 5px 0;
+    outline: none;
+    border: 1px solid #000000;
+
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+
+
+/* КНОПКИ */
+.container_order_history form .button{
+    border: solid 1px #da7c0c;
+    width: 100%;
+    background: #f78d1d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+    background: -moz-linear-gradient(top,  #faa51a, #f47a20);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+    color: #fff;
+    padding: 7px 12px;
+    -webkit-border-radius:4px;
+    moz-border-radius:4px;
+    border-radius:4px;
+    float: right;
+    cursor: pointer;
+}
+
+.container_order_history form .button:hover{
+    background: #f47c20;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+    background: -moz-linear-gradient(top,  #f88e11, #f06015);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+}
+
+
+.button{
+    border: solid 1px #da7c0c;
+    background: #f78d1d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+    background: -moz-linear-gradient(top,  #faa51a, #f47a20);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+    color: #fff;
+    padding: 7px 12px;
+    -webkit-border-radius:4px;
+    moz-border-radius:4px;
+    border-radius:4px;
+    float: right;
+    cursor: pointer;
+}
+
+.button:hover{
+    background: #f47c20;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+    background: -moz-linear-gradient(top,  #f88e11, #f06015);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+}
+
+
+.seltypo {
+    /*padding: 9px;*/
+    /*border: solid 1px #000000;*/
+    outline: 0;
+    /*background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, rgba(255, 160, 76, 0.53)), to(#FFFFFF));*/
+    /*background: -moz-linear-gradient(top, #FFFFFF, rgba(255, 160, 76, 0.52) 1px, #FFFFFF 25px);*/
+    /*box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;*/
+    /*-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;*/
+    /*-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;*/
+    height:100px;
+    width:100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #fbfbfb;
+    font-size: 24px;
+    line-height: 1;
+    padding: 0px;
+    margin: 0 6px 5px 0;
+    outline: none;
+    border: 1px solid #000000;
+}
+
+.seltypo option:hover {
+    box-shadow: 0 0 10px 100px rgba(97, 164, 255, 0.32) inset;
+}
+
+/*option:active {*/
+    /*background-color: #ffa500;*/
+    /*box-shadow: 0 0 10px 100px orange inset;*/
+/*}*/
+
+
+
+
+
+
+/* ПОДВАЛ */
+footer {
+    color: #777;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* СОРТИРОВКА ТАБЛИЦЫ */
+/** {margin:0; padding:0; outline:none}*/
+/*body {font:10px Verdana,Arial; margin:25px; background:#fff url(../images/bg.gif) repeat-x; color:#091f30}*/
+/*.sortable {width:980px; border-left:1px solid #e1ba87; border-top:1px solid #e1ba87; border-bottom:none; margin:0 auto 15px}*/
+
+/*.sortable th {background; text-align:left; color: rgb(255, 179, 75); border:1px solid #ffb34b; border-right:none}*/
+/*.sortable th h3 {font-size:10px; padding:6px 8px 8px}*/
+/*.sortable td {padding:4px 6px 6px; border-bottom:1px solid rgba(255, 222, 174, 0.17); border-right:1px solid rgba(255, 222, 174, 0.16)}*/
+/*.sortable .head h3 {background:url(../images/sort.gif) 7px center no-repeat; cursor:pointer; padding-left:18px}*/
+.sortable .desc, .sortable .asc {background: rgba(255, 161, 80, 0.16)
+}
+.sortable .head:hover, .sortable .desc:hover, .sortable .asc:hover {color: #ff7f21}
+.sortable .evenrow td {background:#fff}
+.sortable .oddrow td {background: rgba(255, 222, 174, 0.17)}
+.sortable td.evenselected {background: #ffffff}
+.sortable td.oddselected {background: rgba(255, 222, 174, 0.17)}
+
+#controls {width:980px; margin:0 auto; height:20px}
+#perpage {float:left; width:400px}
+#perpage select {float:left; font-size:11px}
+#perpage span {float:left; margin:2px 6px 5px 0; padding: 4px}
+#navigation {float:left; width:200px; text-align:center}
+#navigation img {cursor:pointer}
+#text {float:right; width:200px; text-align:right; margin: 0 6px 5px 0}
+
+#perpage_select {
+background: #fbfbfb;
+font-size: 18px;
+width: 30%;
+/*padding: 3px;*/
+/*margin: 0 6px 5px 0;*/
+outline: none;
+border: 1px solid rgba(255, 131, 0, 0.43);
+}
+
+#pagedis {
+    background: #fbfbfb;
+    font-size: 13px;
+    width: 40%;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    outline: none;
+    border: none;
+}
+
+#showpages {
+    background: #fbfbfb;
+    font-size: 16px;
+    width: 50%;
+    /*padding: 3px;*/
+    /*margin: 0 6px 5px 0;*/
+    outline: none;
+    border: 1px solid rgba(255, 131, 0, 0.43);
+}
+
+#showpages select {float:left; font-size:11px}
+
+/*a:visited {*/
+    /*color: #2f34ff; !* Цвет ссылки *!*/
+/*}*/
+
+.selected {
+    font-weight: bold; /* Жирное начертание */
+    color: #ff5113; /* Цвет ссылки */
+}
+

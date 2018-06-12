@@ -1,0 +1,7 @@
+1. 
+>> pip install -r requirements.txt
+or
+>> source webapp_env/bin/activate
+
+2. >> python webapp/flask_server.py
+3. goto http://localhost:5000/

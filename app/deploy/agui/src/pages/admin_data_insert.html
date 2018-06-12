@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" >
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+		<script type="text/javascript" src="js/navbarHeight.js"></script>
+		<script type="text/javascript" src="js/admin_tools.js"></script>
+		<meta charset="utf-8">
+		<title>Внесение данных</title>
+	</head>
+	
+	<body>
+		<!-- Navbar /-->
+		<nav class="navbar navbar-default navbar-fixed-top" id="main-navbar">
+			<div class="row">
+				<div class="navbar-header">
+					<div class="col-md-1 col-xs-3">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="navbar-brand col-md-10 col-xs-5">Автоматическая система обучения прикладной математике</div>
+					<span class="btn btn-trial col-md-1 col-xs-4">
+						<a href="index.html">Выйти</a>
+					</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="collapse navbar-collapse">
+					<div class="nav navbar-nav navbar-right">
+						<label>Вы зашли в систему как</label>
+						<span></span>
+						<label id="user-type">администратор:</label>
+						<span></span>
+						<label id="user">Сидоров Игорь Петрович</label>										
+					</div>
+					<!--/ Admin tabs-->
+					<div class="tabbable">
+					  <ul class="nav nav-tabs">
+					    <li class="active"><a href="admin_data_insert.html">Внесение данных</a></li>
+					    <li><a href="admin_cirriculum.html">Учебный план</a></li>
+					  </ul>
+					</div>
+					<!--/ Admin tabs-->
+				</div>
+			</div>
+		</nav>
+		<!-- Navbar /-->
+		
+		<!--/ Content-->
+		<div class="container container-table">
+		    <div class="row vertical-center-row">
+	        	<div class="col-md-8 col-md-offset-2">
+	        		<div class = "panel panel-primary">
+				  		<div class = "panel-heading">
+				     		 <h3 class = "panel-title">Добавить из файла</h3>
+				   		</div> 
+				   		<div class = "panel-body">
+				   			<div class="form-group col-md-6 has-feedback"  style="padding-left: 0;" id="fileForm">
+			   					<input class="form-control" id="file-input" type="file"/>
+			   					<span class="glyphicon form-control-feedback"></span>
+				   			</div>
+				   			<div class="form-group col-md-4" style="padding-left: 0;">
+				   				<label class="control-label" for="dataType">Тип данных</label>
+			   					<select class="form-control" id="dataType">
+								  <option>Группа</option>
+								  <option>Преподаватель</option>
+								  <option>Студент</option>
+								  <option>Дисциплина</option>
+							 	</select>
+				   			</div>
+				   			<button class="btn btn-primary" onclick="CheckFromFile()">Добавить</a>
+				        </div>
+			        </div>
+			        <div class = "panel panel-primary">
+				  		<div class = "panel-heading">
+				     		 <h3 class = "panel-title">Ввести вручную</h3>
+				   		</div> 
+				   		<div class = "panel-body">
+				   			<div class="form-group col-md-6" style="padding-left: 0;">
+								<div class="dropdown">
+								  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+								    Создать новую запись
+								  </button>
+								  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<li><a class="dropdown-item" href="" data-toggle="modal" data-target="#new-group">Новая группа</a></li>
+									<li><a class="dropdown-item" href="" data-toggle="modal" data-target="#new-teach">Новый преподаватель</a></li>
+									<li><a class="dropdown-item" href="" data-toggle="modal" data-target="#new-student">Новый студент</a></li>
+									<li><a class="dropdown-item" href="" data-toggle="modal" data-target="#new-class">Новая дисциплина</a></li>
+								  </div>
+								</div>
+							</div>
+							<div class="form-group  col-md-6" style="padding: 0;">
+								<button class="btn btn-primary" data-toggle="modal" data-target="#new-assign">Назначение преподавателя на группу</a>
+							</div>
+				        </div>
+			        </div>
+	        	</div>
+	        </div>
+	    </div>
+		<!--/ Content-->
+
+		<div class="modal fade" id="new-assign" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			        <div class="modal-header text-center">
+			            <h4 class="modal-title w-100 font-weight-bold">Новое назначение</h4>
+			        </div>
+	
+			        <div class="modal-body admin_new">
+						<table style="width:100%">
+							<tr>
+								<th>
+									<div class="form-group">
+									  <label class="control-label" for="sel1">Группа:</label>
+					 				  <select multiple class="form-control group-select" id="group-select-2" data-live-search="true">
+				 					  </select>
+							        </div>
+								</th>
+								<th>
+									<div class="form-group">
+									  <label class="control-label" for="sel1">Преподаватель:</label>
+					 				  <select multiple class="form-control teachers-select" id="teachers-select-1" data-live-search="true">
+				 					  </select>
+							        </div>
+								</th>
+								<th>
+									<div class="form-group">
+									  <label class="control-label" for="sel1">Дисциплина:</label>
+					 				  <select multiple class="form-control classes-select" id="classes-select-1" data-live-search="true">
+				 					  </select>
+							        </div>
+								</th>
+							</tr>
+						</table>
+			        </div>
+	
+			        <div class="modal-footer d-flex justify-content-center">
+			            <button class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+			            <button class="btn btn-primary" onclick="addSuccess()">Добавить</button>
+			        </div>
+			    </div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="new-group" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			        <div class="modal-header text-center">
+			            <h4 class="modal-title w-100 font-weight-bold">Внесение данных группы</h4>
+			        </div>
+	
+			        <div class="modal-body admin_new">
+			        	<div class="form-group has-feedback" id="numberForm">
+			        		 <label class="control-label" for="number">Номер:</label>
+							 <input class="form-control" id="number" oninput="InputNewGroup()" />
+							 <span class="glyphicon form-control-feedback"></span>
+			        	</div>
+						<div class="form-group has-feedback" id="dateForm">
+						  	<label class="control-label">Дата начала обучения:</label>
+			                <div class="input-group date" id="group-date-picker">
+			                    <input type="text" id="date-input" class="form-control" onchange="InputNewGroup()" />
+			                    <span class="glyphicon form-control-feedback"></span>
+			                    <span class="input-group-addon">
+			                        <span class="glyphicon glyphicon-calendar"></span>
+			                    </span>
+								</div>
+					    </div>
+			        </div>
+	
+			        <div class="modal-footer d-flex justify-content-center">
+			            <button class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+			            <button class="btn btn-primary" onclick="CheckNewGroup()">Добавить</button>
+			        </div>
+			    </div>
+			</div>
+		</div>
+		
+		<div class="modal fade" id="new-teach" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			        <div class="modal-header text-center">
+			            <h4 class="modal-title w-100 font-weight-bold">Внесение данных преподавателя</h4>
+			        </div>
+	
+			        <div class="modal-body admin_new">
+			        	<div class="foem-group has-feedback" id="fioForm">
+			        		<label class="control-label">ФИО:</label>
+							<input class="form-control" id="fio-input" oninput="InputNewTeacher()" />
+							<span class="glyphicon form-control-feedback"></span>
+			        	</div>
+						<div class="form-group has-feedback" id="disciplinesForm">
+						  <label class="control-label">Дисциплины:</label>
+		 				  <select class="form-control classes-select" id="classes-select-2" data-live-search="true" data-live-search="true" multiple>
+	 					  </select> 
+	 					  <span class="glyphicon form-control-feedback"></span>
+				        </div>
+			        </div>
+	
+			        <div class="modal-footer d-flex justify-content-center">
+			            <button class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+			            <button class="btn btn-primary" onclick="CheckNewTeacher()">Добавить</button>
+			        </div>
+			    </div>
+			</div>
+		</div>
+		
+		<div class="modal fade" id="new-student" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			        <div class="modal-header text-center">
+			            <h4 class="modal-title w-100 font-weight-bold">Внесение данных студента</h4>
+			        </div>
+	
+			        <div class="modal-body admin_new">
+			        	<div class="form-group has-feedback" id="nameForm">
+			        		  <label class="control-label">ФИО:</label>
+							  <input class="form-control" id="name-input" oninput="InputNewStudent()"/>
+							  <span class="glyphicon form-control-feedback"></span>
+			        	</div>
+						<div class="form-group">
+							  <label class="control-label">Группа:</label>
+			 				  <select class="form-control group-select" id="group-select-1" data-live-search="true">
+		 					  </select>
+				        </div>
+			        </div>
+	
+			        <div class="modal-footer d-flex justify-content-center">
+			            <button class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+			            <button class="btn btn-primary" onclick="CheckNewStudent()">Добавить</button>
+			        </div>
+			    </div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="new-class" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			        <div class="modal-header text-center">
+			            <h4 class="modal-title w-100 font-weight-bold">Внесение данных дисциплины</h4>
+			        </div>
+	
+			        <div class="modal-body admin_new">
+			        	<div class="form-group has-feedback" id="disciplineForm">
+			        		<label class="control-label">Название:</label>
+							<input class="form-control" id="discipline" oninput="InputNewDiscipline()" />
+							<span class="glyphicon form-control-feedback"></span>
+			        	</div>
+			        </div>
+	
+			        <div class="modal-footer d-flex justify-content-center">
+			            <button class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+			            <button class="btn btn-primary" onclick="CheckNewDiscipline()">Добавить</button>
+			        </div>
+			    </div>
+			</div>
+		</div>
+
+		<!--/ Modal box: insert success-->
+		<div class="modal fade" tabindex="-1" role="dialog" id="new-success">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title text-center form-title">Поздравляем!</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>Данные успешно добавлены в систему.</p>
+		      </div>
+		      <div class="modal-footer justify-content-center">
+					<button type="submit" class="btn text-center" data-dismiss="modal">OK</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!--/ Modal box: insert success-->
+		<!--Modal box: error-->
+		<div class="modal fade" id="errorSpaces" role="dialog">
+			<div class="modal-dialog modal-dialog-centered modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title text-center form-title">Ошибка!</h4>
+					</div>
+					<div class="modal-body">
+				        <p>Заполнены не все поля!</p>
+				    </div>
+					<div class="modal-footer">
+						<div class="col-md-4 col-md-offset-4 col-xs-12">
+							<button type="submit" class="btn" data-dismiss="modal">OK</button>
+						</div>
+					</div>		
+				</div>
+			</div>
+		</div>
+		<!--/ Modal box: error-->
+	</body>
+</html>

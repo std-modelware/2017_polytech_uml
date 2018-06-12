@@ -1,0 +1,672 @@
+2018-05-05 10:01:49  INFO background-preinit Version:<clinit>:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-05 10:01:50  INFO main TaskApplication:logStarting:50 - Starting TaskApplication v0.0.1-SNAPSHOT on dianko with PID 188 (E:\Polytech_files\Magister\Novikov_Internet_tech\task\src\main\resources\for_launch\task.jar started by admin in E:\Polytech_files\Magister\Novikov_Internet_tech\task\src\main\resources\for_launch)
+2018-05-05 10:01:50  INFO main TaskApplication:logStartupProfileInfo:659 - No active profile set, falling back to default profiles: default
+2018-05-05 10:01:50  INFO main AnnotationConfigServletWebServerApplicationContext:prepareRefresh:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@67f89fa3: startup date [Sat May 05 10:01:50 MSK 2018]; root of context hierarchy
+2018-05-05 10:01:54  INFO main TomcatWebServer:initialize:91 - Tomcat initialized with port(s): 8080 (http)
+2018-05-05 10:01:55  INFO localhost-startStop-1 ContextLoader:prepareWebApplicationContext:285 - Root WebApplicationContext: initialization completed in 4945 ms
+2018-05-05 10:01:55  INFO localhost-startStop-1 ServletRegistrationBean:addRegistration:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-05 10:01:55  INFO localhost-startStop-1 FilterRegistrationBean:configure:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-05 10:01:55  INFO localhost-startStop-1 FilterRegistrationBean:configure:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-05 10:01:55  INFO localhost-startStop-1 FilterRegistrationBean:configure:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-05 10:01:55  INFO localhost-startStop-1 FilterRegistrationBean:configure:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-05 10:01:56  INFO main SimpleUrlHandlerMapping:registerHandler:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-05 10:01:56  INFO main RequestMappingHandlerAdapter:initControllerAdviceCache:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@67f89fa3: startup date [Sat May 05 10:01:50 MSK 2018]; root of context hierarchy
+2018-05-05 10:01:57  INFO main RequestMappingHandlerMapping:register:547 - Mapped "{[/task/marks/{testId}],methods=[GET],consumes=[application/json],produces=[application/json]}" onto public int moocplatform.task.controllers.MarksController.evaluateTestSolution(long,java.lang.String) throws java.sql.SQLException
+2018-05-05 10:01:57  INFO main RequestMappingHandlerMapping:register:547 - Mapped "{[/task/problems/{testId}],methods=[GET],produces=[application/json]}" onto public java.lang.String[] moocplatform.task.controllers.ProblemsController.getProblemsFormulations(long) throws java.sql.SQLException
+2018-05-05 10:01:57  INFO main RequestMappingHandlerMapping:register:547 - Mapped "{[/task/problems],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public void moocplatform.task.controllers.ProblemsController.addProblem(moocplatform.task.pojos.ProblemRequest) throws java.sql.SQLException
+2018-05-05 10:01:57  INFO main RequestMappingHandlerMapping:register:547 - Mapped "{[/task/tests],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public moocplatform.task.pojos.ProblemsSet moocplatform.task.controllers.TestsController.generateProblemsSet(moocplatform.task.pojos.ProblemsSetRequest) throws java.sql.SQLException
+2018-05-05 10:01:57  INFO main RequestMappingHandlerMapping:register:547 - Mapped "{[/task/tests/{testId}],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public void moocplatform.task.controllers.TestsController.createTest(long,int[]) throws java.sql.SQLException
+2018-05-05 10:01:57  INFO main RequestMappingHandlerMapping:register:547 - Mapped "{[/hi]}" onto public java.lang.String moocplatform.task.web.HelloWorldController.sayHi(java.lang.String)
+2018-05-05 10:01:57  INFO main RequestMappingHandlerMapping:register:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-05 10:01:57  INFO main RequestMappingHandlerMapping:register:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-05 10:01:57  INFO main SimpleUrlHandlerMapping:registerHandler:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-05 10:01:57  INFO main SimpleUrlHandlerMapping:registerHandler:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-05 10:01:57  INFO main ExceptionHandlerExceptionResolver:initExceptionHandlerAdviceCache:288 - Detected @ExceptionHandler methods in restResponseEntityExceptionHandler
+2018-05-05 10:01:57  INFO main AnnotationMBeanExporter:afterSingletonsInstantiated:433 - Registering beans for JMX exposure on startup
+2018-05-05 10:01:58  INFO main TomcatWebServer:start:206 - Tomcat started on port(s): 8080 (http) with context path ''
+2018-05-05 10:01:58  INFO main TaskApplication:logStarted:59 - Started TaskApplication in 8.642 seconds (JVM running for 9.943)
+2018-05-05 10:06:44  INFO http-nio-8080-exec-2 DispatcherServlet:initServletBean:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-05 10:06:45  INFO http-nio-8080-exec-2 DispatcherServlet:initServletBean:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 588 ms
+2018-05-05 10:06:46  INFO http-nio-8080-exec-2 DbManager:<init>:25 - Trying to set up a connection to database: apprz_db
+2018-05-05 10:06:50  INFO http-nio-8080-exec-2 DbManager:<init>:28 - Set up connection with database apprz_db by user FAN with password 2018
+2018-05-05 10:06:50  INFO http-nio-8080-exec-2 DbManager:getInstance:43 - Got DB instance
+2018-05-05 10:06:50  INFO http-nio-8080-exec-2 DbManager:getProblemsFormulations:69 - Input values: testId 1
+
+2018-05-05 10:11:31  INFO http-nio-8080-exec-8 DbManager:getInstance:43 - Got DB instance
+2018-05-05 10:11:31  INFO http-nio-8080-exec-8 DbManager:addProblem:52 - Input values: problemRequest ProblemRequest{disciplineId=1, topicId=1, difficulty=0, statement='Given: 5x+5x^2=0. Find x', startExpression='5x+5x^2=0', finalExpression='x=0;x=-1'}
+
+2018-05-05 10:12:01  INFO http-nio-8080-exec-10 DbManager:getInstance:43 - Got DB instance
+2018-05-05 10:12:01  INFO http-nio-8080-exec-10 DbManager:addProblem:52 - Input values: problemRequest ProblemRequest{disciplineId=1, topicId=1, difficulty=0, statement='Given: 5x+5x^2=0. Find x', startExpression='5x+5x^2=0', finalExpression='x=0;x=-1'}
+
+2018-05-05 10:12:05  INFO http-nio-8080-exec-1 DbManager:getInstance:43 - Got DB instance
+2018-05-05 10:12:05  INFO http-nio-8080-exec-1 DbManager:getProblemsFormulations:69 - Input values: testId 1
+
+2018-05-05 10:12:12  INFO http-nio-8080-exec-9 DbManager:getInstance:43 - Got DB instance
+2018-05-05 10:12:12  INFO http-nio-8080-exec-9 DbManager:getProblemsFormulations:69 - Input values: testId 2
+
+2018-05-05 10:12:21  INFO http-nio-8080-exec-5 DbManager:getInstance:43 - Got DB instance
+2018-05-05 10:12:21  INFO http-nio-8080-exec-5 DbManager:getProblemsFormulations:69 - Input values: testId 1
+
+2018-05-12 09:05:34  INFO background-preinit Version:<clinit>:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-12 09:05:38  INFO main TaskApplication:logStarting:50 - Starting TaskApplication v0.0.1-SNAPSHOT on dianko with PID 5108 (E:\Polytech_files\Magister\Novikov_Internet_tech\task\src\main\resources\for_launch\task.jar started by admin in E:\Polytech_files\Magister\Novikov_Internet_tech\task\src\main\resources\for_launch)
+2018-05-12 09:05:38  INFO main TaskApplication:logStartupProfileInfo:659 - No active profile set, falling back to default profiles: default
+2018-05-12 09:05:39  INFO main AnnotationConfigServletWebServerApplicationContext:prepareRefresh:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a46a697: startup date [Sat May 12 09:05:39 MSK 2018]; root of context hierarchy
+2018-05-12 09:05:56  INFO main TomcatWebServer:initialize:91 - Tomcat initialized with port(s): 7777 (http)
+2018-05-12 09:06:01  INFO localhost-startStop-1 ContextLoader:prepareWebApplicationContext:285 - Root WebApplicationContext: initialization completed in 22228 ms
+2018-05-12 09:06:02  INFO localhost-startStop-1 ServletRegistrationBean:addRegistration:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-12 09:06:02  INFO localhost-startStop-1 FilterRegistrationBean:configure:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-12 09:06:02  INFO localhost-startStop-1 FilterRegistrationBean:configure:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-12 09:06:02  INFO localhost-startStop-1 FilterRegistrationBean:configure:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-12 09:06:02  INFO localhost-startStop-1 FilterRegistrationBean:configure:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-12 09:06:03  INFO main SimpleUrlHandlerMapping:registerHandler:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 09:06:03  INFO main RequestMappingHandlerAdapter:initControllerAdviceCache:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7a46a697: startup date [Sat May 12 09:05:39 MSK 2018]; root of context hierarchy
+2018-05-12 09:06:04  INFO main RequestMappingHandlerMapping:register:547 - Mapped "{[/task/marks/{testId}],methods=[GET],consumes=[application/json],produces=[application/json]}" onto public int moocplatform.task.controllers.MarksController.evaluateTestSolution(long,java.lang.String) throws java.sql.SQLException
+2018-05-12 09:06:04  INFO main RequestMappingHandlerMapping:register:547 - Mapped "{[/task/problems/{testId}],methods=[GET],produces=[application/json]}" onto public java.lang.String[] moocplatform.task.controllers.ProblemsController.getProblemsFormulations(long) throws java.sql.SQLException
+2018-05-12 09:06:04  INFO main RequestMappingHandlerMapping:register:547 - Mapped "{[/task/problems],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public void moocplatform.task.controllers.ProblemsController.addProblem(moocplatform.task.pojos.ProblemRequest) throws java.sql.SQLException
+2018-05-12 09:06:04  INFO main RequestMappingHandlerMapping:register:547 - Mapped "{[/task/tests],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public moocplatform.task.pojos.ProblemsSet moocplatform.task.controllers.TestsController.generateProblemsSet(moocplatform.task.pojos.ProblemsSetRequest) throws java.sql.SQLException
+2018-05-12 09:06:04  INFO main RequestMappingHandlerMapping:register:547 - Mapped "{[/task/tests/{testId}],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public void moocplatform.task.controllers.TestsController.createTest(long,int[]) throws java.sql.SQLException
+2018-05-12 09:06:04  INFO main RequestMappingHandlerMapping:register:547 - Mapped "{[/hi]}" onto public java.lang.String moocplatform.task.web.HelloWorldController.sayHi(java.lang.String)
+2018-05-12 09:06:04  INFO main RequestMappingHandlerMapping:register:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-12 09:06:04  INFO main RequestMappingHandlerMapping:register:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-12 09:06:04  INFO main SimpleUrlHandlerMapping:registerHandler:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 09:06:04  INFO main SimpleUrlHandlerMapping:registerHandler:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-12 09:06:04  INFO main ExceptionHandlerExceptionResolver:initExceptionHandlerAdviceCache:288 - Detected @ExceptionHandler methods in restResponseEntityExceptionHandler
+2018-05-12 09:06:04  INFO main AnnotationMBeanExporter:afterSingletonsInstantiated:433 - Registering beans for JMX exposure on startup
+2018-05-12 09:06:05  INFO main TomcatWebServer:start:206 - Tomcat started on port(s): 7777 (http) with context path ''
+2018-05-12 09:06:05  INFO main TaskApplication:logStarted:59 - Started TaskApplication in 34.746 seconds (JVM running for 42.639)
+2018-05-12 09:06:58  INFO http-nio-7777-exec-1 DispatcherServlet:initServletBean:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-12 09:06:58  INFO http-nio-7777-exec-1 DispatcherServlet:initServletBean:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 213 ms
+2018-05-12 09:07:00  INFO http-nio-7777-exec-1 DbManager:<init>:26 - Trying to set up a connection to database: core
+2018-05-12 09:07:02  INFO http-nio-7777-exec-1 DbManager:<init>:29 - Set up connection with database core by user FAN with password 2018
+2018-05-12 09:07:02  INFO http-nio-7777-exec-1 DbManager:getInstance:44 - Got DB instance
+2018-05-12 09:07:02  INFO http-nio-7777-exec-1 DbManager:getProblemsFormulations:71 - Input values: testId 1
+
+2018-05-12 09:07:02  INFO http-nio-7777-exec-1 DbManager:getProblemsFormulations:82 - Got problems formulations for the test with id 1:
+[Prove that A(m,n) equals A(m-1,n) + n*A(m-1,n-1), Prove that F(n+3) - F(n) equals 2 * F(n+1), Prove that B(m) equals S(n,0,m,S1(m,n)/P(n))]
+2018-05-19 11:12:11  INFO background-preinit Version:<clinit>:21 - HV000001: Hibernate Validator 6.0.9.Final
+2018-05-19 11:12:12  INFO main TaskApplication:logStarting:50 - Starting TaskApplication v0.0.1-SNAPSHOT on dianko with PID 6052 (E:\Polytech_files\Magister\Novikov_Internet_tech\task\src\main\resources\for_launch\task.jar started by admin in E:\Polytech_files\Magister\Novikov_Internet_tech\task\src\main\resources\for_launch)
+2018-05-19 11:12:12  INFO main TaskApplication:logStartupProfileInfo:659 - No active profile set, falling back to default profiles: default
+2018-05-19 11:12:13  INFO main AnnotationConfigServletWebServerApplicationContext:prepareRefresh:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@77afea7d: startup date [Sat May 19 11:12:13 MSK 2018]; root of context hierarchy
+2018-05-19 11:12:21  INFO main TomcatWebServer:initialize:91 - Tomcat initialized with port(s): 7777 (http)
+2018-05-19 11:12:22  INFO localhost-startStop-1 ContextLoader:prepareWebApplicationContext:285 - Root WebApplicationContext: initialization completed in 8879 ms
+2018-05-19 11:12:22  INFO localhost-startStop-1 ServletRegistrationBean:addRegistration:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-19 11:12:22  INFO localhost-startStop-1 FilterRegistrationBean:configure:244 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-19 11:12:22  INFO localhost-startStop-1 FilterRegistrationBean:configure:244 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-19 11:12:22  INFO localhost-startStop-1 FilterRegistrationBean:configure:244 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-19 11:12:22  INFO localhost-startStop-1 FilterRegistrationBean:configure:244 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-19 11:12:23  INFO main SimpleUrlHandlerMapping:registerHandler:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-19 11:12:23  INFO main RequestMappingHandlerAdapter:initControllerAdviceCache:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@77afea7d: startup date [Sat May 19 11:12:13 MSK 2018]; root of context hierarchy
+2018-05-19 11:12:24  INFO main RequestMappingHandlerMapping:register:547 - Mapped "{[/task/marks/{testId}],methods=[GET],consumes=[application/json],produces=[application/json]}" onto public int moocplatform.task.controllers.MarksController.evaluateTestSolution(long,moocplatform.task.pojos.TestSolutionRequest) throws java.sql.SQLException,java.io.IOException
+2018-05-19 11:12:24  INFO main RequestMappingHandlerMapping:register:547 - Mapped "{[/task/problems],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public void moocplatform.task.controllers.ProblemsController.addProblem(moocplatform.task.pojos.ProblemRequest) throws java.sql.SQLException
+2018-05-19 11:12:24  INFO main RequestMappingHandlerMapping:register:547 - Mapped "{[/task/problems/{testId}],methods=[GET],produces=[application/json]}" onto public java.lang.String[] moocplatform.task.controllers.ProblemsController.getProblemsFormulations(long) throws java.sql.SQLException
+2018-05-19 11:12:24  INFO main RequestMappingHandlerMapping:register:547 - Mapped "{[/task/tests/{testId}],methods=[PUT],consumes=[application/json],produces=[application/json]}" onto public void moocplatform.task.controllers.TestsController.createTest(long,int[]) throws java.sql.SQLException
+2018-05-19 11:12:24  INFO main RequestMappingHandlerMapping:register:547 - Mapped "{[/task/tests],methods=[POST],consumes=[application/json],produces=[application/json]}" onto public moocplatform.task.pojos.ProblemsSet moocplatform.task.controllers.TestsController.generateProblemsSet(moocplatform.task.pojos.ProblemsSetRequest) throws java.sql.SQLException
+2018-05-19 11:12:24  INFO main RequestMappingHandlerMapping:register:547 - Mapped "{[/hi]}" onto public java.lang.String moocplatform.task.web.HelloWorldController.sayHi(java.lang.String)
+2018-05-19 11:12:24  INFO main RequestMappingHandlerMapping:register:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-19 11:12:24  INFO main RequestMappingHandlerMapping:register:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-19 11:12:24  INFO main SimpleUrlHandlerMapping:registerHandler:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-19 11:12:24  INFO main SimpleUrlHandlerMapping:registerHandler:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-19 11:12:24  INFO main ExceptionHandlerExceptionResolver:initExceptionHandlerAdviceCache:288 - Detected @ExceptionHandler methods in restResponseEntityExceptionHandler
+2018-05-19 11:12:24  INFO main AnnotationMBeanExporter:afterSingletonsInstantiated:433 - Registering beans for JMX exposure on startup
+2018-05-19 11:12:25  INFO main TomcatWebServer:start:206 - Tomcat started on port(s): 7777 (http) with context path ''
+2018-05-19 11:12:25  INFO main TaskApplication:logStarted:59 - Started TaskApplication in 14.677 seconds (JVM running for 18.302)
+2018-05-19 11:14:52  INFO http-nio-7777-exec-1 DispatcherServlet:initServletBean:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-19 11:14:52  INFO http-nio-7777-exec-1 DispatcherServlet:initServletBean:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 53 ms
+2018-05-19 11:14:53  INFO http-nio-7777-exec-1 TestHandler:evaluate:100 - Input values: testId1testSolution Problem ¹1 Solution: tg(sin(x+y))*sin(y+ctg(x)) = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) = tg(sin(x+2*y-y))*sin(y+ctg(x)) Problem ¹2 Solution: 3 = 2 Problem ¹3 Solution: 3 = 3 Problem ¹4 Solution: tg(sin(x+y))*sin(y+ctg(x)) + 1 = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) = tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1
+2018-05-19 11:14:53  INFO http-nio-7777-exec-1 DbManager:<init>:27 - Trying to set up a connection to database: core
+2018-05-19 11:14:54  INFO http-nio-7777-exec-1 DbManager:<init>:30 - Set up connection with database core by user FAN with password 2018
+2018-05-19 11:14:54  INFO http-nio-7777-exec-1 DbManager:getInstance:45 - Got DB instance
+2018-05-19 11:14:54  INFO http-nio-7777-exec-1 DbManager:getScoresSum:219 - Input values: testId 1
+2018-05-19 11:14:54  INFO http-nio-7777-exec-1 DbManager:getScoresSum:229 - Got problems scores sum 150 for the test with id 1
+2018-05-19 11:14:54  INFO http-nio-7777-exec-1 DbManager:getProblemData:197 - Input values: testId 1, localId 1
+2018-05-19 11:14:54  INFO http-nio-7777-exec-1 DbManager:getProblemData:208 - Got data {score=20, problemId=1} for the 1 problem of the test with id 1
+2018-05-19 11:14:54  INFO http-nio-7777-exec-1 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)), finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x))}for the problem with id 1
+2018-05-19 11:14:56  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:14:56  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:14:56  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:14:57  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))
+2018-05-19 11:14:57  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:14:57  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:14:57  INFO http-nio-7777-exec-1 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:14:57  INFO http-nio-7777-exec-1 DbManager:getProblemData:197 - Input values: testId 1, localId 2
+2018-05-19 11:14:57  INFO http-nio-7777-exec-1 DbManager:getProblemData:208 - Got data {score=35, problemId=2} for the 2 problem of the test with id 1
+2018-05-19 11:14:57  INFO http-nio-7777-exec-1 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=2, finalExpression=2}for the problem with id 2
+2018-05-19 11:14:57  INFO http-nio-7777-exec-1 DbManager:getProblemData:197 - Input values: testId 1, localId 3
+2018-05-19 11:14:57  INFO http-nio-7777-exec-1 DbManager:getProblemData:208 - Got data {score=45, problemId=3} for the 3 problem of the test with id 1
+2018-05-19 11:14:57  INFO http-nio-7777-exec-1 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=3, finalExpression=3}for the problem with id 3
+2018-05-19 11:14:58  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?3?3
+2018-05-19 11:14:58  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:14:58  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?3?3Tend</html>
+2018-05-19 11:14:58  INFO http-nio-7777-exec-1 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:14:58  INFO http-nio-7777-exec-1 DbManager:getProblemData:197 - Input values: testId 1, localId 4
+2018-05-19 11:14:58  INFO http-nio-7777-exec-1 DbManager:getProblemData:208 - Got data {score=50, problemId=4} for the 4 problem of the test with id 1
+2018-05-19 11:14:58  INFO http-nio-7777-exec-1 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)) + 1, finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1}for the problem with id 4
+2018-05-19 11:14:59  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:14:59  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:14:59  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))Fend</html>
+2018-05-19 11:14:59  INFO http-nio-7777-exec-1 TestHandler:areAllCalculationsEquivalent:36 - Found a mistake: tg(sin(x+y))*sin(y+ctg(x))+1 !=  tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:14:59  INFO http-nio-7777-exec-1 TestHandler:normalizeResultScore:88 - The result score 0.43333333333333335 was normalized to 2
+2018-05-19 11:15:11  INFO http-nio-7777-exec-2 TestHandler:evaluate:100 - Input values: testId1testSolution Problem ¹1 Solution: tg(sin(x+y))*sin(y+ctg(x)) = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) = tg(sin(x+2*y-y))*sin(y+ctg(x)) Problem ¹2 Solution: 3 = 2 Problem ¹3 Solution: 3 = 3 Problem ¹4 Solution: tg(sin(x+y))*sin(y+ctg(x)) + 1 = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) + 1 = tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1
+2018-05-19 11:15:11  INFO http-nio-7777-exec-2 DbManager:getInstance:45 - Got DB instance
+2018-05-19 11:15:11  INFO http-nio-7777-exec-2 DbManager:getScoresSum:219 - Input values: testId 1
+2018-05-19 11:15:11  INFO http-nio-7777-exec-2 DbManager:getScoresSum:229 - Got problems scores sum 150 for the test with id 1
+2018-05-19 11:15:11  INFO http-nio-7777-exec-2 DbManager:getProblemData:197 - Input values: testId 1, localId 1
+2018-05-19 11:15:11  INFO http-nio-7777-exec-2 DbManager:getProblemData:208 - Got data {score=20, problemId=1} for the 1 problem of the test with id 1
+2018-05-19 11:15:11  INFO http-nio-7777-exec-2 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)), finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x))}for the problem with id 1
+2018-05-19 11:15:12  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:15:12  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:15:12  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:15:13  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))
+2018-05-19 11:15:13  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:15:13  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:15:13  INFO http-nio-7777-exec-2 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:15:13  INFO http-nio-7777-exec-2 DbManager:getProblemData:197 - Input values: testId 1, localId 2
+2018-05-19 11:15:13  INFO http-nio-7777-exec-2 DbManager:getProblemData:208 - Got data {score=35, problemId=2} for the 2 problem of the test with id 1
+2018-05-19 11:15:13  INFO http-nio-7777-exec-2 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=2, finalExpression=2}for the problem with id 2
+2018-05-19 11:15:13  INFO http-nio-7777-exec-2 DbManager:getProblemData:197 - Input values: testId 1, localId 3
+2018-05-19 11:15:13  INFO http-nio-7777-exec-2 DbManager:getProblemData:208 - Got data {score=45, problemId=3} for the 3 problem of the test with id 1
+2018-05-19 11:15:13  INFO http-nio-7777-exec-2 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=3, finalExpression=3}for the problem with id 3
+2018-05-19 11:15:14  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?3?3
+2018-05-19 11:15:14  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:15:14  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?3?3Tend</html>
+2018-05-19 11:15:14  INFO http-nio-7777-exec-2 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:15:14  INFO http-nio-7777-exec-2 DbManager:getProblemData:197 - Input values: testId 1, localId 4
+2018-05-19 11:15:14  INFO http-nio-7777-exec-2 DbManager:getProblemData:208 - Got data {score=50, problemId=4} for the 4 problem of the test with id 1
+2018-05-19 11:15:14  INFO http-nio-7777-exec-2 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)) + 1, finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1}for the problem with id 4
+2018-05-19 11:15:14  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))+1
+2018-05-19 11:15:14  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:15:14  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))+1Tend</html>
+2018-05-19 11:15:15  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))+1?tg(sin(x+2*y-y))*sin(y+ctg(x))+1
+2018-05-19 11:15:15  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:15:15  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))+1?tg(sin(x+2*y-y))*sin(y+ctg(x))+1Tend</html>
+2018-05-19 11:15:15  INFO http-nio-7777-exec-2 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:15:15  INFO http-nio-7777-exec-2 TestHandler:normalizeResultScore:88 - The result score 0.7666666666666666 was normalized to 4
+2018-05-19 11:15:31  INFO http-nio-7777-exec-4 TestHandler:evaluate:100 - Input values: testId1testSolution Problem ¹1 Solution: tg(sin(x+y))*sin(y+ctg(x)) = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) = tg(sin(x+2*y-y))*sin(y+ctg(x)) Problem ¹2 Solution: 2 = 2 Problem ¹3 Solution: 3 = 3 Problem ¹4 Solution: tg(sin(x+y))*sin(y+ctg(x)) + 1 = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) = tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1
+2018-05-19 11:15:31  INFO http-nio-7777-exec-4 DbManager:getInstance:45 - Got DB instance
+2018-05-19 11:15:31  INFO http-nio-7777-exec-4 DbManager:getScoresSum:219 - Input values: testId 1
+2018-05-19 11:15:31  INFO http-nio-7777-exec-4 DbManager:getScoresSum:229 - Got problems scores sum 150 for the test with id 1
+2018-05-19 11:15:31  INFO http-nio-7777-exec-4 DbManager:getProblemData:197 - Input values: testId 1, localId 1
+2018-05-19 11:15:31  INFO http-nio-7777-exec-4 DbManager:getProblemData:208 - Got data {score=20, problemId=1} for the 1 problem of the test with id 1
+2018-05-19 11:15:31  INFO http-nio-7777-exec-4 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)), finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x))}for the problem with id 1
+2018-05-19 11:15:32  INFO http-nio-7777-exec-4 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:15:32  INFO http-nio-7777-exec-4 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:15:32  INFO http-nio-7777-exec-4 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:15:33  INFO http-nio-7777-exec-4 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))
+2018-05-19 11:15:33  INFO http-nio-7777-exec-4 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:15:33  INFO http-nio-7777-exec-4 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:15:33  INFO http-nio-7777-exec-4 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:15:33  INFO http-nio-7777-exec-4 DbManager:getProblemData:197 - Input values: testId 1, localId 2
+2018-05-19 11:15:33  INFO http-nio-7777-exec-4 DbManager:getProblemData:208 - Got data {score=35, problemId=2} for the 2 problem of the test with id 1
+2018-05-19 11:15:33  INFO http-nio-7777-exec-4 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=2, finalExpression=2}for the problem with id 2
+2018-05-19 11:15:34  INFO http-nio-7777-exec-4 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?2?2
+2018-05-19 11:15:34  INFO http-nio-7777-exec-4 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:15:34  INFO http-nio-7777-exec-4 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?2?2Tend</html>
+2018-05-19 11:15:34  INFO http-nio-7777-exec-4 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:15:34  INFO http-nio-7777-exec-4 DbManager:getProblemData:197 - Input values: testId 1, localId 3
+2018-05-19 11:15:34  INFO http-nio-7777-exec-4 DbManager:getProblemData:208 - Got data {score=45, problemId=3} for the 3 problem of the test with id 1
+2018-05-19 11:15:34  INFO http-nio-7777-exec-4 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=3, finalExpression=3}for the problem with id 3
+2018-05-19 11:15:35  INFO http-nio-7777-exec-4 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?3?3
+2018-05-19 11:15:35  INFO http-nio-7777-exec-4 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:15:35  INFO http-nio-7777-exec-4 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?3?3Tend</html>
+2018-05-19 11:15:35  INFO http-nio-7777-exec-4 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:15:35  INFO http-nio-7777-exec-4 DbManager:getProblemData:197 - Input values: testId 1, localId 4
+2018-05-19 11:15:35  INFO http-nio-7777-exec-4 DbManager:getProblemData:208 - Got data {score=50, problemId=4} for the 4 problem of the test with id 1
+2018-05-19 11:15:35  INFO http-nio-7777-exec-4 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)) + 1, finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1}for the problem with id 4
+2018-05-19 11:15:35  INFO http-nio-7777-exec-4 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:15:35  INFO http-nio-7777-exec-4 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:15:35  INFO http-nio-7777-exec-4 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))Fend</html>
+2018-05-19 11:15:35  INFO http-nio-7777-exec-4 TestHandler:areAllCalculationsEquivalent:36 - Found a mistake: tg(sin(x+y))*sin(y+ctg(x))+1 !=  tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:15:35  INFO http-nio-7777-exec-4 TestHandler:normalizeResultScore:88 - The result score 0.6666666666666667 was normalized to 3
+2018-05-19 11:16:05  INFO http-nio-7777-exec-6 TestHandler:evaluate:100 - Input values: testId1testSolution Problem ¹1 Solution: tg(sin(x+y))*sin(y+ctg(x)) = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) = tg(sin(x+2*y-y))*sin(y+ctg(x)) Problem ¹2 Solution: A(m,n) + A(m,n) = 2*A(m,n) Problem ¹3 Solution: 3 = 3 Problem ¹4 Solution: tg(sin(x+y))*sin(y+ctg(x)) + 1 = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) = tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1
+2018-05-19 11:16:05  INFO http-nio-7777-exec-6 DbManager:getInstance:45 - Got DB instance
+2018-05-19 11:16:05  INFO http-nio-7777-exec-6 DbManager:getScoresSum:219 - Input values: testId 1
+2018-05-19 11:16:05  INFO http-nio-7777-exec-6 DbManager:getScoresSum:229 - Got problems scores sum 150 for the test with id 1
+2018-05-19 11:16:05  INFO http-nio-7777-exec-6 DbManager:getProblemData:197 - Input values: testId 1, localId 1
+2018-05-19 11:16:05  INFO http-nio-7777-exec-6 DbManager:getProblemData:208 - Got data {score=20, problemId=1} for the 1 problem of the test with id 1
+2018-05-19 11:16:05  INFO http-nio-7777-exec-6 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)), finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x))}for the problem with id 1
+2018-05-19 11:16:08  INFO http-nio-7777-exec-6 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:16:08  INFO http-nio-7777-exec-6 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:16:08  INFO http-nio-7777-exec-6 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:16:10  INFO http-nio-7777-exec-6 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))
+2018-05-19 11:16:10  INFO http-nio-7777-exec-6 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:16:10  INFO http-nio-7777-exec-6 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:16:10  INFO http-nio-7777-exec-6 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:16:10  INFO http-nio-7777-exec-6 DbManager:getProblemData:197 - Input values: testId 1, localId 2
+2018-05-19 11:16:10  INFO http-nio-7777-exec-6 DbManager:getProblemData:208 - Got data {score=35, problemId=2} for the 2 problem of the test with id 1
+2018-05-19 11:16:11  INFO http-nio-7777-exec-6 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=2, finalExpression=2}for the problem with id 2
+2018-05-19 11:16:11  INFO http-nio-7777-exec-6 DbManager:getProblemData:197 - Input values: testId 1, localId 3
+2018-05-19 11:16:11  INFO http-nio-7777-exec-6 DbManager:getProblemData:208 - Got data {score=45, problemId=3} for the 3 problem of the test with id 1
+2018-05-19 11:16:11  INFO http-nio-7777-exec-6 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=3, finalExpression=3}for the problem with id 3
+2018-05-19 11:16:11  INFO http-nio-7777-exec-6 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?3?3
+2018-05-19 11:16:11  INFO http-nio-7777-exec-6 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:16:11  INFO http-nio-7777-exec-6 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?3?3Tend</html>
+2018-05-19 11:16:11  INFO http-nio-7777-exec-6 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:16:11  INFO http-nio-7777-exec-6 DbManager:getProblemData:197 - Input values: testId 1, localId 4
+2018-05-19 11:16:11  INFO http-nio-7777-exec-6 DbManager:getProblemData:208 - Got data {score=50, problemId=4} for the 4 problem of the test with id 1
+2018-05-19 11:16:11  INFO http-nio-7777-exec-6 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)) + 1, finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1}for the problem with id 4
+2018-05-19 11:16:13  INFO http-nio-7777-exec-6 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:16:13  INFO http-nio-7777-exec-6 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:16:13  INFO http-nio-7777-exec-6 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))Fend</html>
+2018-05-19 11:16:13  INFO http-nio-7777-exec-6 TestHandler:areAllCalculationsEquivalent:36 - Found a mistake: tg(sin(x+y))*sin(y+ctg(x))+1 !=  tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:16:13  INFO http-nio-7777-exec-6 TestHandler:normalizeResultScore:88 - The result score 0.43333333333333335 was normalized to 2
+2018-05-19 11:16:42  INFO http-nio-7777-exec-8 TestHandler:evaluate:100 - Input values: testId1testSolution Problem ¹1 Solution: tg(sin(x+y))*sin(y+ctg(x)) = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) = tg(sin(x+2*y-y))*sin(y+ctg(x)) Problem ¹2 Solution: 2 + A(m,n) = 6 + A(m,n) - 4 Problem ¹3 Solution: 3 = 3 Problem ¹4 Solution: tg(sin(x+y))*sin(y+ctg(x)) + 1 = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) = tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1
+2018-05-19 11:16:42  INFO http-nio-7777-exec-8 DbManager:getInstance:45 - Got DB instance
+2018-05-19 11:16:42  INFO http-nio-7777-exec-8 DbManager:getScoresSum:219 - Input values: testId 1
+2018-05-19 11:16:42  INFO http-nio-7777-exec-8 DbManager:getScoresSum:229 - Got problems scores sum 150 for the test with id 1
+2018-05-19 11:16:42  INFO http-nio-7777-exec-8 DbManager:getProblemData:197 - Input values: testId 1, localId 1
+2018-05-19 11:16:42  INFO http-nio-7777-exec-8 DbManager:getProblemData:208 - Got data {score=20, problemId=1} for the 1 problem of the test with id 1
+2018-05-19 11:16:42  INFO http-nio-7777-exec-8 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)), finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x))}for the problem with id 1
+2018-05-19 11:16:43  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:16:43  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:16:43  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:16:44  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))
+2018-05-19 11:16:44  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:16:44  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:16:44  INFO http-nio-7777-exec-8 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:16:44  INFO http-nio-7777-exec-8 DbManager:getProblemData:197 - Input values: testId 1, localId 2
+2018-05-19 11:16:44  INFO http-nio-7777-exec-8 DbManager:getProblemData:208 - Got data {score=35, problemId=2} for the 2 problem of the test with id 1
+2018-05-19 11:16:44  INFO http-nio-7777-exec-8 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=2, finalExpression=2}for the problem with id 2
+2018-05-19 11:16:44  INFO http-nio-7777-exec-8 DbManager:getProblemData:197 - Input values: testId 1, localId 3
+2018-05-19 11:16:44  INFO http-nio-7777-exec-8 DbManager:getProblemData:208 - Got data {score=45, problemId=3} for the 3 problem of the test with id 1
+2018-05-19 11:16:44  INFO http-nio-7777-exec-8 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=3, finalExpression=3}for the problem with id 3
+2018-05-19 11:16:45  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?3?3
+2018-05-19 11:16:45  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:16:45  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?3?3Tend</html>
+2018-05-19 11:16:45  INFO http-nio-7777-exec-8 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:16:45  INFO http-nio-7777-exec-8 DbManager:getProblemData:197 - Input values: testId 1, localId 4
+2018-05-19 11:16:45  INFO http-nio-7777-exec-8 DbManager:getProblemData:208 - Got data {score=50, problemId=4} for the 4 problem of the test with id 1
+2018-05-19 11:16:45  INFO http-nio-7777-exec-8 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)) + 1, finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1}for the problem with id 4
+2018-05-19 11:16:46  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:16:46  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:16:46  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))Fend</html>
+2018-05-19 11:16:46  INFO http-nio-7777-exec-8 TestHandler:areAllCalculationsEquivalent:36 - Found a mistake: tg(sin(x+y))*sin(y+ctg(x))+1 !=  tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:16:46  INFO http-nio-7777-exec-8 TestHandler:normalizeResultScore:88 - The result score 0.43333333333333335 was normalized to 2
+2018-05-19 11:16:59  INFO http-nio-7777-exec-5 TestHandler:evaluate:100 - Input values: testId1testSolution Problem ¹1 Solution: tg(sin(x+y))*sin(y+ctg(x)) = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) = tg(sin(x+2*y-y))*sin(y+ctg(x)) Problem ¹2 Solution: 2 = 6 - 4 Problem ¹3 Solution: 3 = 3 Problem ¹4 Solution: tg(sin(x+y))*sin(y+ctg(x)) + 1 = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) = tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1
+2018-05-19 11:16:59  INFO http-nio-7777-exec-5 DbManager:getInstance:45 - Got DB instance
+2018-05-19 11:16:59  INFO http-nio-7777-exec-5 DbManager:getScoresSum:219 - Input values: testId 1
+2018-05-19 11:16:59  INFO http-nio-7777-exec-5 DbManager:getScoresSum:229 - Got problems scores sum 150 for the test with id 1
+2018-05-19 11:16:59  INFO http-nio-7777-exec-5 DbManager:getProblemData:197 - Input values: testId 1, localId 1
+2018-05-19 11:16:59  INFO http-nio-7777-exec-5 DbManager:getProblemData:208 - Got data {score=20, problemId=1} for the 1 problem of the test with id 1
+2018-05-19 11:16:59  INFO http-nio-7777-exec-5 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)), finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x))}for the problem with id 1
+2018-05-19 11:17:00  INFO http-nio-7777-exec-5 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:17:00  INFO http-nio-7777-exec-5 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:17:00  INFO http-nio-7777-exec-5 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:17:01  INFO http-nio-7777-exec-5 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))
+2018-05-19 11:17:01  INFO http-nio-7777-exec-5 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:17:01  INFO http-nio-7777-exec-5 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:17:01  INFO http-nio-7777-exec-5 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:17:01  INFO http-nio-7777-exec-5 DbManager:getProblemData:197 - Input values: testId 1, localId 2
+2018-05-19 11:17:01  INFO http-nio-7777-exec-5 DbManager:getProblemData:208 - Got data {score=35, problemId=2} for the 2 problem of the test with id 1
+2018-05-19 11:17:01  INFO http-nio-7777-exec-5 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=2, finalExpression=2}for the problem with id 2
+2018-05-19 11:17:01  INFO http-nio-7777-exec-5 DbManager:getProblemData:197 - Input values: testId 1, localId 3
+2018-05-19 11:17:01  INFO http-nio-7777-exec-5 DbManager:getProblemData:208 - Got data {score=45, problemId=3} for the 3 problem of the test with id 1
+2018-05-19 11:17:01  INFO http-nio-7777-exec-5 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=3, finalExpression=3}for the problem with id 3
+2018-05-19 11:17:01  INFO http-nio-7777-exec-5 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?3?3
+2018-05-19 11:17:01  INFO http-nio-7777-exec-5 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:17:01  INFO http-nio-7777-exec-5 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?3?3Tend</html>
+2018-05-19 11:17:01  INFO http-nio-7777-exec-5 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:17:01  INFO http-nio-7777-exec-5 DbManager:getProblemData:197 - Input values: testId 1, localId 4
+2018-05-19 11:17:01  INFO http-nio-7777-exec-5 DbManager:getProblemData:208 - Got data {score=50, problemId=4} for the 4 problem of the test with id 1
+2018-05-19 11:17:02  INFO http-nio-7777-exec-5 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)) + 1, finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1}for the problem with id 4
+2018-05-19 11:17:02  INFO http-nio-7777-exec-5 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:17:02  INFO http-nio-7777-exec-5 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:17:02  INFO http-nio-7777-exec-5 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))Fend</html>
+2018-05-19 11:17:02  INFO http-nio-7777-exec-5 TestHandler:areAllCalculationsEquivalent:36 - Found a mistake: tg(sin(x+y))*sin(y+ctg(x))+1 !=  tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:17:02  INFO http-nio-7777-exec-5 TestHandler:normalizeResultScore:88 - The result score 0.43333333333333335 was normalized to 2
+2018-05-19 11:17:24  INFO http-nio-7777-exec-9 TestHandler:evaluate:100 - Input values: testId1testSolution Problem ¹1 Solution: tg(sin(x+y))*sin(y+ctg(x)) = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) = tg(sin(x+2*y-y))*sin(y+ctg(x)) Problem ¹2 Solution: A(m,n) = A(m,n) Problem ¹3 Solution: 3 = 3 Problem ¹4 Solution: tg(sin(x+y))*sin(y+ctg(x)) + 1 = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) = tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1
+2018-05-19 11:17:24  INFO http-nio-7777-exec-9 DbManager:getInstance:45 - Got DB instance
+2018-05-19 11:17:24  INFO http-nio-7777-exec-9 DbManager:getScoresSum:219 - Input values: testId 1
+2018-05-19 11:17:24  INFO http-nio-7777-exec-9 DbManager:getScoresSum:229 - Got problems scores sum 150 for the test with id 1
+2018-05-19 11:17:24  INFO http-nio-7777-exec-9 DbManager:getProblemData:197 - Input values: testId 1, localId 1
+2018-05-19 11:17:24  INFO http-nio-7777-exec-9 DbManager:getProblemData:208 - Got data {score=20, problemId=1} for the 1 problem of the test with id 1
+2018-05-19 11:17:24  INFO http-nio-7777-exec-9 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)), finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x))}for the problem with id 1
+2018-05-19 11:17:25  INFO http-nio-7777-exec-9 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:17:25  INFO http-nio-7777-exec-9 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:17:25  INFO http-nio-7777-exec-9 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:17:26  INFO http-nio-7777-exec-9 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))
+2018-05-19 11:17:26  INFO http-nio-7777-exec-9 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:17:26  INFO http-nio-7777-exec-9 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:17:26  INFO http-nio-7777-exec-9 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:17:26  INFO http-nio-7777-exec-9 DbManager:getProblemData:197 - Input values: testId 1, localId 2
+2018-05-19 11:17:26  INFO http-nio-7777-exec-9 DbManager:getProblemData:208 - Got data {score=35, problemId=2} for the 2 problem of the test with id 1
+2018-05-19 11:17:26  INFO http-nio-7777-exec-9 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=2, finalExpression=2}for the problem with id 2
+2018-05-19 11:17:26  INFO http-nio-7777-exec-9 DbManager:getProblemData:197 - Input values: testId 1, localId 3
+2018-05-19 11:17:26  INFO http-nio-7777-exec-9 DbManager:getProblemData:208 - Got data {score=45, problemId=3} for the 3 problem of the test with id 1
+2018-05-19 11:17:26  INFO http-nio-7777-exec-9 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=3, finalExpression=3}for the problem with id 3
+2018-05-19 11:17:27  INFO http-nio-7777-exec-9 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?3?3
+2018-05-19 11:17:27  INFO http-nio-7777-exec-9 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:17:27  INFO http-nio-7777-exec-9 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?3?3Tend</html>
+2018-05-19 11:17:27  INFO http-nio-7777-exec-9 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:17:27  INFO http-nio-7777-exec-9 DbManager:getProblemData:197 - Input values: testId 1, localId 4
+2018-05-19 11:17:27  INFO http-nio-7777-exec-9 DbManager:getProblemData:208 - Got data {score=50, problemId=4} for the 4 problem of the test with id 1
+2018-05-19 11:17:27  INFO http-nio-7777-exec-9 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)) + 1, finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1}for the problem with id 4
+2018-05-19 11:17:28  INFO http-nio-7777-exec-9 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:17:28  INFO http-nio-7777-exec-9 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:17:28  INFO http-nio-7777-exec-9 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))Fend</html>
+2018-05-19 11:17:28  INFO http-nio-7777-exec-9 TestHandler:areAllCalculationsEquivalent:36 - Found a mistake: tg(sin(x+y))*sin(y+ctg(x))+1 !=  tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:17:28  INFO http-nio-7777-exec-9 TestHandler:normalizeResultScore:88 - The result score 0.43333333333333335 was normalized to 2
+2018-05-19 11:18:35  INFO http-nio-7777-exec-3 TestHandler:evaluate:100 - Input values: testId1testSolution Problem ¹1 Solution: tg(sin(x+y))*sin(y+ctg(x)) = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) = tg(sin(x+2*y-y))*sin(y+ctg(x)) Problem ¹2 Solution: sin(x) = (1-cos(x)^2)^0.5 Problem ¹3 Solution: 3 = 3 Problem ¹4 Solution: tg(sin(x+y))*sin(y+ctg(x)) + 1 = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) = tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1
+2018-05-19 11:18:35  INFO http-nio-7777-exec-3 DbManager:getInstance:45 - Got DB instance
+2018-05-19 11:18:35  INFO http-nio-7777-exec-3 DbManager:getScoresSum:219 - Input values: testId 1
+2018-05-19 11:18:35  INFO http-nio-7777-exec-3 DbManager:getScoresSum:229 - Got problems scores sum 150 for the test with id 1
+2018-05-19 11:18:35  INFO http-nio-7777-exec-3 DbManager:getProblemData:197 - Input values: testId 1, localId 1
+2018-05-19 11:18:35  INFO http-nio-7777-exec-3 DbManager:getProblemData:208 - Got data {score=20, problemId=1} for the 1 problem of the test with id 1
+2018-05-19 11:18:35  INFO http-nio-7777-exec-3 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)), finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x))}for the problem with id 1
+2018-05-19 11:18:36  INFO http-nio-7777-exec-3 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:18:36  INFO http-nio-7777-exec-3 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:18:36  INFO http-nio-7777-exec-3 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:18:37  INFO http-nio-7777-exec-3 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))
+2018-05-19 11:18:37  INFO http-nio-7777-exec-3 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:18:37  INFO http-nio-7777-exec-3 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:18:37  INFO http-nio-7777-exec-3 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:18:37  INFO http-nio-7777-exec-3 DbManager:getProblemData:197 - Input values: testId 1, localId 2
+2018-05-19 11:18:37  INFO http-nio-7777-exec-3 DbManager:getProblemData:208 - Got data {score=35, problemId=2} for the 2 problem of the test with id 1
+2018-05-19 11:18:37  INFO http-nio-7777-exec-3 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=2, finalExpression=2}for the problem with id 2
+2018-05-19 11:18:37  INFO http-nio-7777-exec-3 DbManager:getProblemData:197 - Input values: testId 1, localId 3
+2018-05-19 11:18:37  INFO http-nio-7777-exec-3 DbManager:getProblemData:208 - Got data {score=45, problemId=3} for the 3 problem of the test with id 1
+2018-05-19 11:18:37  INFO http-nio-7777-exec-3 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=3, finalExpression=3}for the problem with id 3
+2018-05-19 11:18:37  INFO http-nio-7777-exec-3 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?3?3
+2018-05-19 11:18:37  INFO http-nio-7777-exec-3 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:18:37  INFO http-nio-7777-exec-3 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?3?3Tend</html>
+2018-05-19 11:18:37  INFO http-nio-7777-exec-3 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:18:37  INFO http-nio-7777-exec-3 DbManager:getProblemData:197 - Input values: testId 1, localId 4
+2018-05-19 11:18:37  INFO http-nio-7777-exec-3 DbManager:getProblemData:208 - Got data {score=50, problemId=4} for the 4 problem of the test with id 1
+2018-05-19 11:18:37  INFO http-nio-7777-exec-3 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)) + 1, finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1}for the problem with id 4
+2018-05-19 11:18:38  INFO http-nio-7777-exec-3 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:18:38  INFO http-nio-7777-exec-3 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:18:38  INFO http-nio-7777-exec-3 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))Fend</html>
+2018-05-19 11:18:38  INFO http-nio-7777-exec-3 TestHandler:areAllCalculationsEquivalent:36 - Found a mistake: tg(sin(x+y))*sin(y+ctg(x))+1 !=  tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:18:38  INFO http-nio-7777-exec-3 TestHandler:normalizeResultScore:88 - The result score 0.43333333333333335 was normalized to 2
+2018-05-19 11:18:57  INFO http-nio-7777-exec-7 TestHandler:evaluate:100 - Input values: testId1testSolution Problem ¹1 Solution: tg(sin(x+y))*sin(y+ctg(x)) = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) = tg(sin(x+2*y-y))*sin(y+ctg(x)) Problem ¹2 Solution: sin(x)?sin(x) = (1-cos(x)^2)^0.5 Problem ¹3 Solution: 3 = 3 Problem ¹4 Solution: tg(sin(x+y))*sin(y+ctg(x)) + 1 = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) = tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1
+2018-05-19 11:18:57  INFO http-nio-7777-exec-7 DbManager:getInstance:45 - Got DB instance
+2018-05-19 11:18:57  INFO http-nio-7777-exec-7 DbManager:getScoresSum:219 - Input values: testId 1
+2018-05-19 11:18:57  INFO http-nio-7777-exec-7 DbManager:getScoresSum:229 - Got problems scores sum 150 for the test with id 1
+2018-05-19 11:18:57  INFO http-nio-7777-exec-7 DbManager:getProblemData:197 - Input values: testId 1, localId 1
+2018-05-19 11:18:57  INFO http-nio-7777-exec-7 DbManager:getProblemData:208 - Got data {score=20, problemId=1} for the 1 problem of the test with id 1
+2018-05-19 11:18:57  INFO http-nio-7777-exec-7 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)), finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x))}for the problem with id 1
+2018-05-19 11:18:58  INFO http-nio-7777-exec-7 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:18:58  INFO http-nio-7777-exec-7 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:18:58  INFO http-nio-7777-exec-7 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:18:59  INFO http-nio-7777-exec-7 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))
+2018-05-19 11:18:59  INFO http-nio-7777-exec-7 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:18:59  INFO http-nio-7777-exec-7 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:18:59  INFO http-nio-7777-exec-7 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:18:59  INFO http-nio-7777-exec-7 DbManager:getProblemData:197 - Input values: testId 1, localId 2
+2018-05-19 11:18:59  INFO http-nio-7777-exec-7 DbManager:getProblemData:208 - Got data {score=35, problemId=2} for the 2 problem of the test with id 1
+2018-05-19 11:18:59  INFO http-nio-7777-exec-7 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=2, finalExpression=2}for the problem with id 2
+2018-05-19 11:18:59  INFO http-nio-7777-exec-7 DbManager:getProblemData:197 - Input values: testId 1, localId 3
+2018-05-19 11:18:59  INFO http-nio-7777-exec-7 DbManager:getProblemData:208 - Got data {score=45, problemId=3} for the 3 problem of the test with id 1
+2018-05-19 11:18:59  INFO http-nio-7777-exec-7 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=3, finalExpression=3}for the problem with id 3
+2018-05-19 11:19:00  INFO http-nio-7777-exec-7 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?3?3
+2018-05-19 11:19:00  INFO http-nio-7777-exec-7 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:19:00  INFO http-nio-7777-exec-7 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?3?3Tend</html>
+2018-05-19 11:19:00  INFO http-nio-7777-exec-7 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:19:00  INFO http-nio-7777-exec-7 DbManager:getProblemData:197 - Input values: testId 1, localId 4
+2018-05-19 11:19:00  INFO http-nio-7777-exec-7 DbManager:getProblemData:208 - Got data {score=50, problemId=4} for the 4 problem of the test with id 1
+2018-05-19 11:19:00  INFO http-nio-7777-exec-7 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)) + 1, finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1}for the problem with id 4
+2018-05-19 11:19:01  INFO http-nio-7777-exec-7 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:19:01  INFO http-nio-7777-exec-7 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:19:01  INFO http-nio-7777-exec-7 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))Fend</html>
+2018-05-19 11:19:01  INFO http-nio-7777-exec-7 TestHandler:areAllCalculationsEquivalent:36 - Found a mistake: tg(sin(x+y))*sin(y+ctg(x))+1 !=  tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:19:01  INFO http-nio-7777-exec-7 TestHandler:normalizeResultScore:88 - The result score 0.43333333333333335 was normalized to 2
+2018-05-19 11:19:27  INFO http-nio-7777-exec-1 TestHandler:evaluate:100 - Input values: testId1testSolution Problem ¹1 Solution: tg(sin(x+y))*sin(y+ctg(x)) = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) = tg(sin(x+2*y-y))*sin(y+ctg(x)) Problem ¹2 Solution: 2=2 Problem ¹3 Solution: 3 = 3 Problem ¹4 Solution: tg(sin(x+y))*sin(y+ctg(x)) + 1 = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) = tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1
+2018-05-19 11:19:27  INFO http-nio-7777-exec-1 DbManager:getInstance:45 - Got DB instance
+2018-05-19 11:19:27  INFO http-nio-7777-exec-1 DbManager:getScoresSum:219 - Input values: testId 1
+2018-05-19 11:19:27  INFO http-nio-7777-exec-1 DbManager:getScoresSum:229 - Got problems scores sum 150 for the test with id 1
+2018-05-19 11:19:27  INFO http-nio-7777-exec-1 DbManager:getProblemData:197 - Input values: testId 1, localId 1
+2018-05-19 11:19:27  INFO http-nio-7777-exec-1 DbManager:getProblemData:208 - Got data {score=20, problemId=1} for the 1 problem of the test with id 1
+2018-05-19 11:19:27  INFO http-nio-7777-exec-1 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)), finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x))}for the problem with id 1
+2018-05-19 11:19:28  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:19:28  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:19:28  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:19:29  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))
+2018-05-19 11:19:29  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:19:29  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:19:29  INFO http-nio-7777-exec-1 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:19:29  INFO http-nio-7777-exec-1 DbManager:getProblemData:197 - Input values: testId 1, localId 2
+2018-05-19 11:19:29  INFO http-nio-7777-exec-1 DbManager:getProblemData:208 - Got data {score=35, problemId=2} for the 2 problem of the test with id 1
+2018-05-19 11:19:29  INFO http-nio-7777-exec-1 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=2, finalExpression=2}for the problem with id 2
+2018-05-19 11:19:30  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?2?2
+2018-05-19 11:19:30  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:19:30  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?2?2Tend</html>
+2018-05-19 11:19:30  INFO http-nio-7777-exec-1 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:19:30  INFO http-nio-7777-exec-1 DbManager:getProblemData:197 - Input values: testId 1, localId 3
+2018-05-19 11:19:30  INFO http-nio-7777-exec-1 DbManager:getProblemData:208 - Got data {score=45, problemId=3} for the 3 problem of the test with id 1
+2018-05-19 11:19:30  INFO http-nio-7777-exec-1 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=3, finalExpression=3}for the problem with id 3
+2018-05-19 11:19:31  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?3?3
+2018-05-19 11:19:31  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:19:31  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?3?3Tend</html>
+2018-05-19 11:19:31  INFO http-nio-7777-exec-1 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:19:31  INFO http-nio-7777-exec-1 DbManager:getProblemData:197 - Input values: testId 1, localId 4
+2018-05-19 11:19:31  INFO http-nio-7777-exec-1 DbManager:getProblemData:208 - Got data {score=50, problemId=4} for the 4 problem of the test with id 1
+2018-05-19 11:19:31  INFO http-nio-7777-exec-1 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)) + 1, finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1}for the problem with id 4
+2018-05-19 11:19:32  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:19:32  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:19:32  INFO http-nio-7777-exec-1 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))Fend</html>
+2018-05-19 11:19:32  INFO http-nio-7777-exec-1 TestHandler:areAllCalculationsEquivalent:36 - Found a mistake: tg(sin(x+y))*sin(y+ctg(x))+1 !=  tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:19:32  INFO http-nio-7777-exec-1 TestHandler:normalizeResultScore:88 - The result score 0.6666666666666667 was normalized to 3
+2018-05-19 11:20:28  INFO http-nio-7777-exec-2 TestHandler:evaluate:100 - Input values: testId1testSolution Problem ¹1 Solution: tg(sin(x+y))*sin(y+ctg(x)) = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) = tg(sin(x+2*y-y))*sin(y+ctg(x)) Problem ¹2 Solution: trigonometry?sin(x) = (1-cos(x)^2)^0.5 Problem ¹3 Solution: 3 = 3 Problem ¹4 Solution: tg(sin(x+y))*sin(y+ctg(x)) + 1 = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) = tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1
+2018-05-19 11:20:28  INFO http-nio-7777-exec-2 DbManager:getInstance:45 - Got DB instance
+2018-05-19 11:20:28  INFO http-nio-7777-exec-2 DbManager:getScoresSum:219 - Input values: testId 1
+2018-05-19 11:20:28  INFO http-nio-7777-exec-2 DbManager:getScoresSum:229 - Got problems scores sum 150 for the test with id 1
+2018-05-19 11:20:28  INFO http-nio-7777-exec-2 DbManager:getProblemData:197 - Input values: testId 1, localId 1
+2018-05-19 11:20:28  INFO http-nio-7777-exec-2 DbManager:getProblemData:208 - Got data {score=20, problemId=1} for the 1 problem of the test with id 1
+2018-05-19 11:20:28  INFO http-nio-7777-exec-2 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)), finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x))}for the problem with id 1
+2018-05-19 11:20:29  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:20:29  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:20:29  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:20:30  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))
+2018-05-19 11:20:30  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:20:30  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:20:30  INFO http-nio-7777-exec-2 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:20:30  INFO http-nio-7777-exec-2 DbManager:getProblemData:197 - Input values: testId 1, localId 2
+2018-05-19 11:20:30  INFO http-nio-7777-exec-2 DbManager:getProblemData:208 - Got data {score=35, problemId=2} for the 2 problem of the test with id 1
+2018-05-19 11:20:30  INFO http-nio-7777-exec-2 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=2, finalExpression=2}for the problem with id 2
+2018-05-19 11:20:30  INFO http-nio-7777-exec-2 DbManager:getProblemData:197 - Input values: testId 1, localId 3
+2018-05-19 11:20:30  INFO http-nio-7777-exec-2 DbManager:getProblemData:208 - Got data {score=45, problemId=3} for the 3 problem of the test with id 1
+2018-05-19 11:20:30  INFO http-nio-7777-exec-2 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=3, finalExpression=3}for the problem with id 3
+2018-05-19 11:20:31  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?3?3
+2018-05-19 11:20:31  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:20:31  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?3?3Tend</html>
+2018-05-19 11:20:31  INFO http-nio-7777-exec-2 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:20:31  INFO http-nio-7777-exec-2 DbManager:getProblemData:197 - Input values: testId 1, localId 4
+2018-05-19 11:20:31  INFO http-nio-7777-exec-2 DbManager:getProblemData:208 - Got data {score=50, problemId=4} for the 4 problem of the test with id 1
+2018-05-19 11:20:31  INFO http-nio-7777-exec-2 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)) + 1, finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1}for the problem with id 4
+2018-05-19 11:20:31  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:20:31  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:20:31  INFO http-nio-7777-exec-2 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))Fend</html>
+2018-05-19 11:20:31  INFO http-nio-7777-exec-2 TestHandler:areAllCalculationsEquivalent:36 - Found a mistake: tg(sin(x+y))*sin(y+ctg(x))+1 !=  tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:20:31  INFO http-nio-7777-exec-2 TestHandler:normalizeResultScore:88 - The result score 0.43333333333333335 was normalized to 2
+2018-05-19 11:26:14  INFO http-nio-7777-exec-6 TestHandler:evaluate:100 - Input values: testId1testSolution Problem ¹1 Solution: tg(sin(x+y))*sin(y+ctg(x)) = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) = tg(sin(x+2*y-y))*sin(y+ctg(x)) Problem ¹2 Solution: y = y Problem ¹3 Solution: 3 = 3 Problem ¹4 Solution: tg(sin(x+y))*sin(y+ctg(x)) + 1 = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) = tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1
+2018-05-19 11:26:14  INFO http-nio-7777-exec-6 DbManager:getInstance:45 - Got DB instance
+2018-05-19 11:26:14  INFO http-nio-7777-exec-6 DbManager:getScoresSum:219 - Input values: testId 1
+2018-05-19 11:26:14  INFO http-nio-7777-exec-6 DbManager:getScoresSum:229 - Got problems scores sum 150 for the test with id 1
+2018-05-19 11:26:14  INFO http-nio-7777-exec-6 DbManager:getProblemData:197 - Input values: testId 1, localId 1
+2018-05-19 11:26:14  INFO http-nio-7777-exec-6 DbManager:getProblemData:208 - Got data {score=20, problemId=1} for the 1 problem of the test with id 1
+2018-05-19 11:26:14  INFO http-nio-7777-exec-6 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)), finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x))}for the problem with id 1
+2018-05-19 11:26:15  INFO http-nio-7777-exec-6 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:26:15  INFO http-nio-7777-exec-6 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:26:15  INFO http-nio-7777-exec-6 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:26:15  INFO http-nio-7777-exec-6 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))
+2018-05-19 11:26:15  INFO http-nio-7777-exec-6 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:26:15  INFO http-nio-7777-exec-6 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:26:15  INFO http-nio-7777-exec-6 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:26:15  INFO http-nio-7777-exec-6 DbManager:getProblemData:197 - Input values: testId 1, localId 2
+2018-05-19 11:26:15  INFO http-nio-7777-exec-6 DbManager:getProblemData:208 - Got data {score=35, problemId=2} for the 2 problem of the test with id 1
+2018-05-19 11:26:15  INFO http-nio-7777-exec-6 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=2, finalExpression=2}for the problem with id 2
+2018-05-19 11:26:15  INFO http-nio-7777-exec-6 DbManager:getProblemData:197 - Input values: testId 1, localId 3
+2018-05-19 11:26:15  INFO http-nio-7777-exec-6 DbManager:getProblemData:208 - Got data {score=45, problemId=3} for the 3 problem of the test with id 1
+2018-05-19 11:26:15  INFO http-nio-7777-exec-6 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=3, finalExpression=3}for the problem with id 3
+2018-05-19 11:26:16  INFO http-nio-7777-exec-6 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?3?3
+2018-05-19 11:26:16  INFO http-nio-7777-exec-6 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:26:16  INFO http-nio-7777-exec-6 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?3?3Tend</html>
+2018-05-19 11:26:16  INFO http-nio-7777-exec-6 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:26:16  INFO http-nio-7777-exec-6 DbManager:getProblemData:197 - Input values: testId 1, localId 4
+2018-05-19 11:26:16  INFO http-nio-7777-exec-6 DbManager:getProblemData:208 - Got data {score=50, problemId=4} for the 4 problem of the test with id 1
+2018-05-19 11:26:16  INFO http-nio-7777-exec-6 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)) + 1, finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1}for the problem with id 4
+2018-05-19 11:26:17  INFO http-nio-7777-exec-6 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:26:17  INFO http-nio-7777-exec-6 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:26:17  INFO http-nio-7777-exec-6 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))Fend</html>
+2018-05-19 11:26:17  INFO http-nio-7777-exec-6 TestHandler:areAllCalculationsEquivalent:36 - Found a mistake: tg(sin(x+y))*sin(y+ctg(x))+1 !=  tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:26:17  INFO http-nio-7777-exec-6 TestHandler:normalizeResultScore:88 - The result score 0.43333333333333335 was normalized to 2
+2018-05-19 11:26:25  INFO http-nio-7777-exec-8 TestHandler:evaluate:100 - Input values: testId1testSolution Problem ¹1 Solution: tg(sin(x+y))*sin(y+ctg(x)) = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) = tg(sin(x+2*y-y))*sin(y+ctg(x)) Problem ¹2 Solution: 2 = 2 Problem ¹3 Solution: 3 = 3 Problem ¹4 Solution: tg(sin(x+y))*sin(y+ctg(x)) + 1 = tg(sin((x-1)+(y+1)))*sin(y+ctg(x)) = tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1
+2018-05-19 11:26:25  INFO http-nio-7777-exec-8 DbManager:getInstance:45 - Got DB instance
+2018-05-19 11:26:25  INFO http-nio-7777-exec-8 DbManager:getScoresSum:219 - Input values: testId 1
+2018-05-19 11:26:25  INFO http-nio-7777-exec-8 DbManager:getScoresSum:229 - Got problems scores sum 150 for the test with id 1
+2018-05-19 11:26:25  INFO http-nio-7777-exec-8 DbManager:getProblemData:197 - Input values: testId 1, localId 1
+2018-05-19 11:26:25  INFO http-nio-7777-exec-8 DbManager:getProblemData:208 - Got data {score=20, problemId=1} for the 1 problem of the test with id 1
+2018-05-19 11:26:25  INFO http-nio-7777-exec-8 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)), finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x))}for the problem with id 1
+2018-05-19 11:26:26  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:26:26  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:26:26  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:26:27  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))
+2018-05-19 11:26:27  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:26:27  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))?tg(sin(x+2*y-y))*sin(y+ctg(x))Tend</html>
+2018-05-19 11:26:27  INFO http-nio-7777-exec-8 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:26:27  INFO http-nio-7777-exec-8 DbManager:getProblemData:197 - Input values: testId 1, localId 2
+2018-05-19 11:26:27  INFO http-nio-7777-exec-8 DbManager:getProblemData:208 - Got data {score=35, problemId=2} for the 2 problem of the test with id 1
+2018-05-19 11:26:27  INFO http-nio-7777-exec-8 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=2, finalExpression=2}for the problem with id 2
+2018-05-19 11:26:28  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?2?2
+2018-05-19 11:26:28  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:26:28  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?2?2Tend</html>
+2018-05-19 11:26:28  INFO http-nio-7777-exec-8 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:26:28  INFO http-nio-7777-exec-8 DbManager:getProblemData:197 - Input values: testId 1, localId 3
+2018-05-19 11:26:28  INFO http-nio-7777-exec-8 DbManager:getProblemData:208 - Got data {score=45, problemId=3} for the 3 problem of the test with id 1
+2018-05-19 11:26:28  INFO http-nio-7777-exec-8 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=3, finalExpression=3}for the problem with id 3
+2018-05-19 11:26:29  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?3?3
+2018-05-19 11:26:29  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:26:29  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?3?3Tend</html>
+2018-05-19 11:26:29  INFO http-nio-7777-exec-8 TestHandler:areAllCalculationsEquivalent:40 - Checked that all problem's solution calculations are equivalent
+2018-05-19 11:26:29  INFO http-nio-7777-exec-8 DbManager:getProblemData:197 - Input values: testId 1, localId 4
+2018-05-19 11:26:29  INFO http-nio-7777-exec-8 DbManager:getProblemData:208 - Got data {score=50, problemId=4} for the 4 problem of the test with id 1
+2018-05-19 11:26:29  INFO http-nio-7777-exec-8 DbManager:getStartFinalExpressions:185 - Got start and final expressions {startExpression=tg(sin(x+y))*sin(y+ctg(x)) + 1, finalExpression=tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1}for the problem with id 4
+2018-05-19 11:26:30  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:59 - Sending 'GET' request to URL : http://vikto9494.wallst.ru/cgi-bin/rest_cgi_api.cgi?check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:26:30  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:60 - Response Code : 200
+2018-05-19 11:26:30  INFO http-nio-7777-exec-8 TestHandler:areCalculationsEquivalent:69 - Response text: <html>q:check_without_substitutions?tg(sin(x+y))*sin(y+ctg(x))+1?tg(sin((x-1)+(y+1)))*sin(y+ctg(x))Fend</html>
+2018-05-19 11:26:30  INFO http-nio-7777-exec-8 TestHandler:areAllCalculationsEquivalent:36 - Found a mistake: tg(sin(x+y))*sin(y+ctg(x))+1 !=  tg(sin((x-1)+(y+1)))*sin(y+ctg(x))
+2018-05-19 11:26:30  INFO http-nio-7777-exec-8 TestHandler:normalizeResultScore:88 - The result score 0.6666666666666667 was normalized to 3
+2018-05-19 11:27:25  INFO http-nio-7777-exec-5 DbManager:getInstance:45 - Got DB instance
+2018-05-19 11:27:25  INFO http-nio-7777-exec-5 DbManager:addProblem:54 - Input values: problemRequest ProblemRequest{disciplineId=1, topicId=1, difficulty=0, statement='Given: 5x+5x^2=0. Find x', startExpression='5x+5x^2=0', finalExpression='x=0;x=-1'}
+
+2018-05-19 11:27:26  INFO http-nio-7777-exec-5 DbManager:addProblem:63 - Added a problem successfully
+2018-05-19 11:27:30  INFO http-nio-7777-exec-9 DbManager:getInstance:45 - Got DB instance
+2018-05-19 11:27:30  INFO http-nio-7777-exec-9 DbManager:getProblemsFormulations:72 - Input values: testId 1
+2018-05-19 11:27:30  INFO http-nio-7777-exec-9 DbManager:getProblemsFormulations:83 - Got problems formulations [Prove that tg(sin(x+y))*sin(y+ctg(x)) equals tg(sin(x+2*y-y))*sin(y+ctg(x)), Prove that 2 equals 2, Prove that 3 equals 3, Prove that tg(sin(x+y))*sin(y+ctg(x)) + 1 equals tg(sin(x+2*y-y))*sin(y+ctg(x)) + 1]for the test with id 1
+2018-05-19 11:27:52  INFO http-nio-7777-exec-10 DbManager:getInstance:45 - Got DB instance
+2018-05-19 11:27:52  INFO http-nio-7777-exec-10 DbManager:getProblemsIds:96 - Input values: disciplineId 1
+ topicIds [1]
+ problemsDifficulties [1, 3]
+
+2018-05-19 11:27:52  INFO http-nio-7777-exec-10 DbManager:getProblemsIds:110 - SQL query:SELECT problem_id FROM problems WHERE discipline_id = 1 AND (topic_id = 1 OR topic_id = 1) AND difficulty = 1
+
+2018-05-19 11:27:52  INFO http-nio-7777-exec-10 DbManager:getProblemsIds:110 - SQL query:SELECT problem_id FROM problems WHERE discipline_id = 1 AND (topic_id = 1 OR topic_id = 1) AND difficulty = 3
+
+2018-05-19 11:27:52  INFO http-nio-7777-exec-10 DbManager:getProblemsIds:119 - Got problems ids [1, 3, 4] for the discipline with id 1
+
+2018-05-19 11:27:52  INFO http-nio-7777-exec-10 DbManager:initTest:129 - Input values: problemIds [1, 3, 4]
+ scores {}
+
+2018-05-19 11:27:52  INFO http-nio-7777-exec-10 DbManager:initTest:144 - SQL query:INSERT INTO tests_problems(test_id, problem_id, score, problem_local_id) VALUES(2, 1, 0, 0)
+
+2018-05-19 11:27:53  INFO http-nio-7777-exec-10 DbManager:initTest:144 - SQL query:INSERT INTO tests_problems(test_id, problem_id, score, problem_local_id) VALUES(2, 3, 0, 1)
+
+2018-05-19 11:27:53  INFO http-nio-7777-exec-10 DbManager:initTest:144 - SQL query:INSERT INTO tests_problems(test_id, problem_id, score, problem_local_id) VALUES(2, 4, 0, 2)
+
+2018-05-19 11:27:53  INFO http-nio-7777-exec-10 DbManager:initTest:147 - Added a new test draft successfully
+2018-05-19 11:27:53  INFO http-nio-7777-exec-10 DbManager:getProblemsFormulations:72 - Input values: testId 0
+2018-05-19 11:27:53  INFO http-nio-7777-exec-10 DbManager:getProblemsFormulations:83 - Got problems formulations []for the test with id 0
+2018-05-19 11:28:34  INFO http-nio-7777-exec-3 DbManager:getInstance:45 - Got DB instance
+2018-05-19 11:28:34  INFO http-nio-7777-exec-3 DbManager:getProblemsIds:96 - Input values: disciplineId 1
+ topicIds [1]
+ problemsDifficulties [1, 3]
+
+2018-05-19 11:28:34  INFO http-nio-7777-exec-3 DbManager:getProblemsIds:110 - SQL query:SELECT problem_id FROM problems WHERE discipline_id = 1 AND (topic_id = 1 OR topic_id = 1) AND difficulty = 1
+
+2018-05-19 11:28:34  INFO http-nio-7777-exec-3 DbManager:getProblemsIds:110 - SQL query:SELECT problem_id FROM problems WHERE discipline_id = 1 AND (topic_id = 1 OR topic_id = 1) AND difficulty = 3
+
+2018-05-19 11:28:34  INFO http-nio-7777-exec-3 DbManager:getProblemsIds:119 - Got problems ids [1, 3] for the discipline with id 1
+
+2018-05-19 11:28:34  INFO http-nio-7777-exec-3 DbManager:initTest:129 - Input values: problemIds [1, 3]
+ scores {}
+
+2018-05-19 11:28:34  INFO http-nio-7777-exec-3 DbManager:initTest:144 - SQL query:INSERT INTO tests_problems(test_id, problem_id, score, problem_local_id) VALUES(3, 1, 0, 0)
+
+2018-05-19 11:28:34  INFO http-nio-7777-exec-3 DbManager:initTest:144 - SQL query:INSERT INTO tests_problems(test_id, problem_id, score, problem_local_id) VALUES(3, 3, 0, 1)
+
+2018-05-19 11:28:34  INFO http-nio-7777-exec-3 DbManager:initTest:147 - Added a new test draft successfully
+2018-05-19 11:28:34  INFO http-nio-7777-exec-3 DbManager:getProblemsFormulations:72 - Input values: testId 0
+2018-05-19 11:28:34  INFO http-nio-7777-exec-3 DbManager:getProblemsFormulations:83 - Got problems formulations []for the test with id 0
+2018-05-19 11:28:42  INFO http-nio-7777-exec-7 DbManager:getInstance:45 - Got DB instance
+2018-05-19 11:28:42  INFO http-nio-7777-exec-7 DbManager:getProblemsIds:96 - Input values: disciplineId 1
+ topicIds [1]
+ problemsDifficulties [1, 2]
+
+2018-05-19 11:28:42  INFO http-nio-7777-exec-7 DbManager:getProblemsIds:110 - SQL query:SELECT problem_id FROM problems WHERE discipline_id = 1 AND (topic_id = 1 OR topic_id = 1) AND difficulty = 1
+
+2018-05-19 11:28:42  INFO http-nio-7777-exec-7 DbManager:getProblemsIds:110 - SQL query:SELECT problem_id FROM problems WHERE discipline_id = 1 AND (topic_id = 1 OR topic_id = 1) AND difficulty = 2
+
+2018-05-19 11:28:42  INFO http-nio-7777-exec-7 DbManager:getProblemsIds:119 - Got problems ids [1, 2] for the discipline with id 1
+
+2018-05-19 11:28:42  INFO http-nio-7777-exec-7 DbManager:initTest:129 - Input values: problemIds [1, 2]
+ scores {}
+
+2018-05-19 11:28:42  INFO http-nio-7777-exec-7 DbManager:initTest:144 - SQL query:INSERT INTO tests_problems(test_id, problem_id, score, problem_local_id) VALUES(4, 1, 0, 0)
+
+2018-05-19 11:28:42  INFO http-nio-7777-exec-7 DbManager:initTest:144 - SQL query:INSERT INTO tests_problems(test_id, problem_id, score, problem_local_id) VALUES(4, 2, 0, 1)
+
+2018-05-19 11:28:42  INFO http-nio-7777-exec-7 DbManager:initTest:147 - Added a new test draft successfully
+2018-05-19 11:28:42  INFO http-nio-7777-exec-7 DbManager:getProblemsFormulations:72 - Input values: testId 0
+2018-05-19 11:28:42  INFO http-nio-7777-exec-7 DbManager:getProblemsFormulations:83 - Got problems formulations []for the test with id 0
+2018-05-19 11:29:14  INFO http-nio-7777-exec-1 DbManager:getInstance:45 - Got DB instance
+2018-05-19 11:29:14  INFO http-nio-7777-exec-1 DbManager:getProblemsIds:96 - Input values: disciplineId 1
+ topicIds [1]
+ problemsDifficulties [1]
+
+2018-05-19 11:29:14  INFO http-nio-7777-exec-1 DbManager:getProblemsIds:110 - SQL query:SELECT problem_id FROM problems WHERE discipline_id = 1 AND (topic_id = 1 OR topic_id = 1) AND difficulty = 1
+
+2018-05-19 11:29:14  INFO http-nio-7777-exec-1 DbManager:getProblemsIds:119 - Got problems ids [1] for the discipline with id 1
+
+2018-05-19 11:29:14  INFO http-nio-7777-exec-1 DbManager:initTest:129 - Input values: problemIds [1]
+ scores {}
+
+2018-05-19 11:29:14  INFO http-nio-7777-exec-1 DbManager:initTest:144 - SQL query:INSERT INTO tests_problems(test_id, problem_id, score, problem_local_id) VALUES(5, 1, 0, 0)
+
+2018-05-19 11:29:14  INFO http-nio-7777-exec-1 DbManager:initTest:147 - Added a new test draft successfully
+2018-05-19 11:29:14  INFO http-nio-7777-exec-1 DbManager:getProblemsFormulations:72 - Input values: testId 0
+2018-05-19 11:29:14  INFO http-nio-7777-exec-1 DbManager:getProblemsFormulations:83 - Got problems formulations []for the test with id 0
+2018-05-19 11:32:06  INFO http-nio-7777-exec-4 DbManager:getInstance:45 - Got DB instance
+2018-05-19 11:32:06  INFO http-nio-7777-exec-4 DbManager:getProblemsIds:96 - Input values: disciplineId 1
+ topicIds null
+ problemsDifficulties [1, 2]
+
+2018-05-19 11:32:14  INFO http-nio-7777-exec-6 DbManager:getInstance:45 - Got DB instance
+2018-05-19 11:32:14  INFO http-nio-7777-exec-6 DbManager:getProblemsIds:96 - Input values: disciplineId 1
+ topicIds null
+ problemsDifficulties [1, 2]
+
+2018-05-19 11:32:38  INFO http-nio-7777-exec-8 DbManager:getInstance:45 - Got DB instance
+2018-05-19 11:32:38  INFO http-nio-7777-exec-8 DbManager:getProblemsIds:96 - Input values: disciplineId 1
+ topicIds null
+ problemsDifficulties [1, 2]
+
+2018-05-19 11:32:42  INFO http-nio-7777-exec-5 DbManager:getInstance:45 - Got DB instance
+2018-05-19 11:32:42  INFO http-nio-7777-exec-5 DbManager:getProblemsIds:96 - Input values: disciplineId 1
+ topicIds [1]
+ problemsDifficulties [1, 2]
+
+2018-05-19 11:32:42  INFO http-nio-7777-exec-5 DbManager:getProblemsIds:110 - SQL query:SELECT problem_id FROM problems WHERE discipline_id = 1 AND (topic_id = 1 OR topic_id = 1) AND difficulty = 1
+
+2018-05-19 11:32:42  INFO http-nio-7777-exec-5 DbManager:getProblemsIds:110 - SQL query:SELECT problem_id FROM problems WHERE discipline_id = 1 AND (topic_id = 1 OR topic_id = 1) AND difficulty = 2
+
+2018-05-19 11:32:42  INFO http-nio-7777-exec-5 DbManager:getProblemsIds:119 - Got problems ids [1, 2] for the discipline with id 1
+
+2018-05-19 11:32:42  INFO http-nio-7777-exec-5 DbManager:initTest:129 - Input values: problemIds [1, 2]
+ scores {}
+
+2018-05-19 11:32:42  INFO http-nio-7777-exec-5 DbManager:initTest:144 - SQL query:INSERT INTO tests_problems(test_id, problem_id, score, problem_local_id) VALUES(7, 1, 0, 0)
+
+2018-05-19 11:32:42  INFO http-nio-7777-exec-5 DbManager:initTest:144 - SQL query:INSERT INTO tests_problems(test_id, problem_id, score, problem_local_id) VALUES(7, 2, 0, 1)
+
+2018-05-19 11:32:42  INFO http-nio-7777-exec-5 DbManager:initTest:147 - Added a new test draft successfully
+2018-05-19 11:32:42  INFO http-nio-7777-exec-5 DbManager:getProblemsFormulations:72 - Input values: testId 0
+2018-05-19 11:32:42  INFO http-nio-7777-exec-5 DbManager:getProblemsFormulations:83 - Got problems formulations []for the test with id 0

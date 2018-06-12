@@ -1,0 +1,5 @@
+*.bak
+.DS_Store
+.idea/
+#core
+**/core/src/**/target/

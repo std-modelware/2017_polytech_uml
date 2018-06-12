@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" >
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/navbarHeight.js"></script>
+		<meta charset="utf-8">
+		<title>Успеваемость</title>
+	</head>
+	
+	<body>
+		<!--/ Navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top" id="main-navbar">
+			<div class="row">
+				<div class="navbar-header">
+					<div class="col-md-1 col-xs-3">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="navbar-brand col-md-10 col-xs-5">Автоматическая система обучения прикладной математике</div>
+					<span class="btn btn-trial col-md-1 col-xs-4">
+						<a href="index.html">Выйти</a>
+					</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="collapse navbar-collapse">
+					<div class="nav navbar-nav navbar-right">
+						<label>Вы зашли в систему как</label>
+						<span></span>
+						<label id="user-type">студент:</label>
+						<span></span>
+						<label id="user">Петров Петр Петрович</label>									
+					</div>
+					<!--/ Student tabs-->
+					<div class="tabbable">
+					  <ul class="nav nav-tabs">
+					    <li><a href="student_results.html">Промежуточные итоги</a></li>
+					    <li class="active"><a href="student_grades.html">Успеваемость</a></li>
+					  </ul>
+					</div>
+					<!--/ Student tabs-->
+				</div>
+			</div>
+		</nav>
+		<!-- Navbar /-->
+		
+		<!--/ Content-->
+		<div class="container container-table">
+			<div class="table-responsive">
+				<table class="table table-striped table-bordered table-hover">
+				    <thead>
+				        <tr><th></th><th></th><th></th><th>
+				    </thead>
+				    <tbody>
+				        <tr class="clickable" data-toggle="collapse" data-target="#group-of-rows-1" aria-expanded="false" aria-controls="group-of-rows-1">
+				            <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+				            <td><b>Семестр 1</b></td>
+				          	<td></td>  
+				        </tr>
+				    </tbody>
+				    <tbody id="group-of-rows-1" class="collapse">
+				        <tr>
+				            <td>Математический анализ</td>
+				            <td><i>Отлично</i></td>
+				          	<td></td>  
+				        </tr>
+				        <tr>
+				            <td>Линейная алгебра</td>
+				            <td><i>Удовлетворительно</i></td>
+				          	<td></td>  
+				        </tr>
+				        <tr>
+				            <td>Программирование на C</td>
+				            <td><i>Отлично</i></td>
+				          	<td></td>  
+				        </tr>
+				    </tbody>
+				    <tbody>
+				        <tr class="clickable" data-toggle="collapse" data-target="#group-of-rows-2" aria-expanded="false" aria-controls="group-of-rows-2">
+				            <td><i class="fa fa-plus" aria-hidden="true"></i></td>
+				            <td><b>Семестр 2</b></td>
+				          	<td></td>  
+				        </tr>
+				    </tbody>
+				    <tbody id="group-of-rows-2" class="collapse">
+				        <tr>
+				            <td>Математический анализ</td>
+				            <td><i>Отлично</i></td>
+				          	<td></td>  
+				        </tr>
+				        <tr>
+				            <td>Линейная алгебра</td>
+				            <td><i>Удовлетворительно</i></td>
+				          	<td></td>  
+				        </tr>
+				        <tr>
+				            <td>Программирование на C</td>
+				            <td><i>Отлично</i></td>
+				          	<td></td>  
+				        </tr>
+				        <tr>
+				            <td>Численные методы</td>
+				            <td><i>Хорошо</i></td>
+				          	<td></td>  
+				        </tr>
+				    </tbody>
+				</table>
+			</div>
+		</div>
+		<!--/ Content-->
+		
+	</body>
+</html>

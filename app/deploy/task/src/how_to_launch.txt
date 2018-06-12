@@ -1,0 +1,6 @@
+How to fun instruction
+
+0. Launch mysql server
+1. execute scripts from for_launch: createDbAndUser.sql, resetDb.sql
+2. in cmd execute: java -jar task.jar
+3. Send requests through Insomnia
